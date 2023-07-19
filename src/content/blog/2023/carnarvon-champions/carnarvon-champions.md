@@ -3,7 +3,7 @@ author: Ian Bull
 pubDatetime: 2023-07-09T15:57:52.737Z
 title: Carnarvon Fastball — Provincial Champions
 postSlug: carnarvon-champions
-ogImage: ./provincils.png
+ogImage: ./provincials.png
 featured: true
 tags:
   - softball
