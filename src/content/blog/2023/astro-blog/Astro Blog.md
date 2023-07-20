@@ -8,6 +8,7 @@ featured: true
 tags:
   - astro
   - netlify
+  - obsidian
 description: My new blogging platform built on Astro Build and Astro Paper.
 ---
 
@@ -15,7 +16,7 @@ description: My new blogging platform built on Astro Build and Astro Paper.
 
 ## Overview
 
-For the past year, I have been searching, starting, and stopping the process of creating a new blogging platform for myself. I had a few design goals when I set out, and I couldn't find a solution that I liked that met all of them. In particular, I wanted a system that:
+For the past year, I have been searching, starting, stopping and restarting the process of creating a new blogging platform for myself. I had a few design goals when I set out, and I couldn't find a solution that I liked that met all of them. In particular, I wanted a system that:
 
 - Looked nice
 - Fast to load

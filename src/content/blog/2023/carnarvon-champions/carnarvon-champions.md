@@ -11,7 +11,7 @@ tags:
 description: The Carnarvon Black Ice are Provincial Champions!
 ---
 
-In addition to writing software, managing infrastructure and training large language models, I am also the director of a Softball Associations. This past weekend, one of the teams I help coach, **The Carnarvon Black Ice**, won the Provincial Championship. I'm very proud of the team and wanted to share the news.
+In addition to writing software, managing infrastructure and training large language models, I am also the director of a Softball Association. This past weekend, one of the teams I help coach, **The Carnarvon Black Ice**, won the Provincial Championship. I'm very proud of the team and wanted to share the news.
 
 ![Gold Medal](./champions.jpg)
 
