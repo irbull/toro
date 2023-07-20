@@ -28,8 +28,6 @@ For the past year, I have been searching, starting, stopping and restarting the 
 
 Those last two points were the kickers. Most static site generators require you to place your assets in a `/public` or `/assets` folder or upload them to a CDN first, meaning common markdown editors couldn't easily reference them. I spend my day in [Obsidian.md](https://obsidian.md/) and I wanted to author my blog posts there too.
 
-![Astronaut](./astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png)
-
 ## 🧠 Obsidian
 
 If you haven't heard of Obsidian and need to keep track of notes, then Obsidian is the best tool you've never used. Obsidian is a private and flexible note-taking app. It stores all notes on disk in Markdown, ensuring no vendor lock-in. At the least, it’s a great Markdown editor, while at its most, it’s a second brain.
@@ -49,6 +47,8 @@ I didn't want the entire site in Obsidian, but I wanted to author my blog in the
 ## 🚀 Astro Build
 
 Using [Astro Build](https://astro.build/) with the [experimental image assets](https://docs.astro.build/en/guides/assets/), I was able to achieve this.
+
+![Astronaut](./astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png)
 
 For those unfamiliar with Astro Build, it's an all-in-one web framework built for speed. Its content-focused, specifically designed for publishing, blogs, portfolios, and documentation sites. It's not designed for building social networks or todo lists.
 
