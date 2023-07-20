@@ -16,14 +16,13 @@ const { title, author, description, ogImage, pubDatetime, tags } = post.data;
 const images = await Astro.glob("/src/content/blog/2023/**/*").then(files => {
   return files
     .filter(file => {
-      return file.file?.endsWith(post.id);
+      return file.file?.endsWith(post?.id);
     })
     .map(file => {
       return file.images;
     })[0];
 });
-const optimizedOGImage = images[ogImage ?? ""]?.src;
-
+const optimizedOGImage = images?.[ogImage ?? ""]?.src;
 const { Content } = await post.render();
 const ogUrl = new URL(
   optimizedOGImage ? optimizedOGImage : `${title}.png`,
