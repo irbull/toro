@@ -1,7 +1,7 @@
 ---
 author: Ian Bull
 pubDatetime: 2023-07-19T15:57:52.737Z
-title: Introducing my new blogging platform
+title: Introducing My New Blogging Platform
 postSlug: astro-blog
 ogImage: ./provincials.png
 featured: true
