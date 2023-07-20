@@ -4,7 +4,8 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 import logoPNG from "/logo.png";
-import logoSVG from "/logo.svg";
+import darkLogoSVG from "../assets/logo_dark.svg";
+import lightLogoSVG from "../assets/logo.svg";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
@@ -21,13 +22,31 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={LOGO_IMAGE.svg ? logoSVG.src : logoPNG.src}
+              src={LOGO_IMAGE.svg ? lightLogoSVG.src : logoPNG.src}
               alt="AstroPaper Logo"
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
             />
           ) : (
-            SITE.title
+            <div class="flex flex-row space-x-4">
+              <div>
+                <img
+                  src={darkLogoSVG.src}
+                  alt="AstroPaper Logo"
+                  width={LOGO_IMAGE.width}
+                  height={LOGO_IMAGE.height}
+                  id="dark-svg-logo"
+                />
+                <img
+                  src={lightLogoSVG.src}
+                  alt="AstroPaper Logo"
+                  width={LOGO_IMAGE.width}
+                  height={LOGO_IMAGE.height}
+                  id="light-svg-logo"
+                />
+              </div>
+              <div>{SITE.title}</div>
+            </div>
           )
         }
       </a>
