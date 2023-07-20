@@ -56,7 +56,7 @@ Astro is a Multi-Page App that is entirely rendered on the server during its bui
 
 ![Lighthouse Performance](./lighthouse.png)
 
-Astro supports many common UI component languages, including React, Preact, Svelte, Vue, and others. Because sites are rendered on the server, there is no need to worry about hooks, closures, refs, observables, atoms, reactions, or any other reactive concepts. The platform supports components written in Typescript or Javascript and has a large collection of integrations, including integrations for TailwindCSS, MDX, and automatic image optimizations.
+Astro supports many common UI component languages, including React, Preact, Svelte, Vue, and others. Because sites are rendered on the server, there is no need to worry about hooks, closures, refs, observables, atoms, reactions, or any other reactive concepts. The platform supports components written in Typescript or Javascript and has a large collection of integrations, including integrations for TailwindCSS, MDX, and automatic image optimizations. There are also a number of [pre-made themes](https://astro.build/themes/). I based my blog off of [Astro Paper](https://github.com/satnaing/astro-paper).
 
 Of course, you can add reactivity if you need it. The developers like to say that Astro Build provides **opt-in complexity**.
 
