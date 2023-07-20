@@ -18,13 +18,12 @@ description: My new blogging platform built on Astro Build and Astro Paper.
 
 For the past year, I have been searching, starting, stopping and restarting the process of creating a new blogging platform for myself. I had a few design goals when I set out, and I couldn't find a solution that I liked that met all of them. In particular, I wanted a system that:
 
-- Looked nice
-- Fast to load
-- Was based on markdown
-- Could be statically generated
+- Looks nice and is fast to load
+- Is based on markdown
+- Can be statically generated
 - Easy to build and deploy
-- Content could be easily separated from the framewok
-- **Provided a consistent user experience between post authoring, development and production**
+- Content can be easily separated from the framewok
+- **Provides a consistent user experience between post authoring, development and production**
 
 Those last two points were the kickers. Most static site generators require you to place your assets in a `/public` or `/assets` folder or upload them to a CDN first, meaning common markdown editors couldn't easily reference them. I spend my day in [Obsidian.md](https://obsidian.md/) and I wanted to author my blog posts there too.
 
