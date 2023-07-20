@@ -5,7 +5,6 @@ title: AstroPaper 2.0
 postSlug: astro-paper-2
 featured: true
 draft: true
-ogImage: /assets/hero.png
 tags:
   - release
 description: AstroPaper with the enhancements of Astro v2. Type-safe markdown contents, bug fixes and better dev experience etc.

@@ -3,7 +3,7 @@ author: Ian Bull
 pubDatetime: 2023-07-19T15:57:52.737Z
 title: Introducing My New Blogging Platform
 postSlug: astro-blog
-ogImage: ./provincials.png
+ogImage: ./astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png
 featured: true
 tags:
   - astro
@@ -26,6 +26,8 @@ For the past year, I have been searching, starting, and stopping the process of 
 - **Provided a consistent user experience between post authoring, development and production**
 
 Those last two points were the kickers. Most static site generators require you to place your assets in a `/public` or `/assets` folder or upload them to a CDN first, meaning common markdown editors couldn't easily reference them. I spend my day in [Obsidian.md](https://obsidian.md/) and I wanted to author my blog posts there too.
+
+![Astronaut](./astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png)
 
 ## 🧠 Obsidian
 
