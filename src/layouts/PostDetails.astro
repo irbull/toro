@@ -13,21 +13,31 @@ export interface Props {
 
 const { post } = Astro.props;
 const { title, author, description, ogImage, pubDatetime, tags } = post.data;
-const images = await Astro.glob("/src/content/blog/2023/**/*").then(files => {
-  return files
-    .filter(file => {
+
+async function getAssetsOGImageURL() {
+  return new URL(
+    ogImage ? ogImage : `${title}.png`,
+    Astro.url.origin
+  ).href;
+}
+
+async function getOptimizedOGImageURL() {
+  const images = await Astro.glob("/src/content/blog/2023/**/*").then(files => {
+    return files.filter(file => {
       return file.file?.endsWith(post?.id);
-    })
-    .map(file => {
+    }).map(file => {
       return file.images;
     })[0];
-});
-const optimizedOGImage = images?.[ogImage ?? ""]?.src;
+  });
+  const optimizedOGImage = images?.[ogImage ?? ""]?.src;
+  return new URL(
+    optimizedOGImage ? optimizedOGImage : `${title}.png`,
+    Astro.url.origin
+  ).href;
+}
+
 const { Content } = await post.render();
-const ogUrl = new URL(
-  optimizedOGImage ? optimizedOGImage : `${title}.png`,
-  Astro.url.origin
-).href;
+const ogUrl = ogImage?.startsWith('/assets') ? await getAssetsOGImageURL() : await getOptimizedOGImageURL() ;
 ---
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
