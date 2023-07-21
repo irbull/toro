@@ -4,7 +4,7 @@ pubDatetime: 2023-07-20
 title: How I use Obsidian
 postSlug: how-i-use-obsidian
 ogImage: /assets/og_images/obsidian_og.png
-featured: true
+featured: false
 tags:
   - obsidian
 description: An overview of how I make use of Obsidian for my daily notes.
@@ -24,11 +24,11 @@ While discussing how and why I [built my current blogging platform](/blog/2023/a
 
 In this article, I'd like to discuss the last one, [Obsidian](https://obsidian.md/).
 
-Obsidian is a note-taking application that runs on your local machine and saves your notes on your local device. All notes are written in Markdown, and Obsidian offers one of the best in-place markdown editor available. It supports note linking, provides a speedy search capability, has a canvas for brainstorming, and offers an extensible plugin model with a vibrant ecosystem. I use nearly all of these features on a daily basis.
+Obsidian is a note-taking application that runs on your local machine and saves your notes locally. All notes are written in Markdown, and Obsidian offers one of the best in-place markdown editor available. It supports note linking, provides a speedy search capability, has a canvas for brainstorming, and offers an extensible plugin model with a vibrant ecosystem. I use nearly all of these features on a daily basis.
 
 ## 🚀 Introduction to Obsidian
 
-In October 2021, I assumed the role of [VP of Carnarvon Fastball](https://carnarvon.ca). Suddenly, I had two jobs, and I needed to keep my life organized. I decided to maintain an notebook on my computer to document my activities, thoughts, meeting minutes, to-do items, draft emails and additional notes. I sought a tool that I could store locally, author in plain text (Markdown), and search with ease. After conducting some research, I chose to use Obsidian. In the past 20 months, I have written over 125,000 words across 645 notes.
+In October 2021, I assumed the role of [VP of Carnarvon Fastball](https://carnarvon.ca). Suddenly, I had two jobs, and I needed to keep my life organized. I decided to maintain a notebook on my computer to document my activities, thoughts, meeting minutes, to-do items, draft emails and additional notes. I sought a tool that I could store locally, author in plain text (Markdown), and search with ease. After conducting some research, I chose to use Obsidian. In the past 20 months, I have written over **126,000** words across **645** notes.
 
 When you first open Obsidian, you're prompted to create a vault. This is simply the location on your disk where you wish to store your files. You can place them in a Git Repository, a OneDrive folder, an NFS drive, or any location of your choice. After creating a vault, you are ready to start creating notes.
 
@@ -52,6 +52,10 @@ Obsidian, in its basic form, serves as an extraordinary note-taking application.
 - [Obsidian Banners](https://github.com/noatpad/obsidian-banners)
 - [Emoi Toolbar](https://github.com/oliveryh/obsidian-emoji-toolbar)
 - [Obsidian Linter](https://github.com/platers/obsidian-linter)
+- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
+- [Obsidian Encrypt](https://github.com/meld-cp/obsidian-encrypt)
+- [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
+- [Open Vault in VSCode](https://github.com/NomarCub/obsidian-open-vscode)
 
 ## 📆 My Daily Notes
 
@@ -115,6 +119,6 @@ I have attempted to list this plugin in Obsidian's plugin list, but it has not y
 
 I take these two steps further by summarizing my weekly notes once a month, and finally, at the end of the year, I generate a **Year in Review**.
 
-## Conclusion
+## 📄 Conclusion
 
 Obsidian is an invaluable tool for comprehensive note-taking and organizing tasks. Its wide range of features and flexible plugin model make it adaptable to various work and lifestyle needs. More than just a simple application for digital scribbling, Obsidian excels in creating a connected graph of notes, thus broadening the way we think and work with ideas. With the help of a vast ecosystem of built-in extensions and community plugins, Obsidian extends the bounds of an ordinary note-taking application to a complete productivity tool. My experience with Obsidian shows how it can be tailored to meet personal workflows, track daily activities, and wholeheartedly assist in managing life, tasks and thoughts. Through my use of the app, my work-life balance has significantly improved due to the smooth management of the daily tasks and challenging responsibilities I maintain. Obsidian has transformed my approach to note-taking and effectively revolutionized my productivity habits.
