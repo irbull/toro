@@ -113,9 +113,7 @@ Prompt: Write me a 2-3 paragraph summary of the work I completed this week in th
 
 ```
 
-I have developed a unique [Obsidian plugin](https://github.com/irbull/obsidian-ai-summary/) that compiles all cited notes and employs the power of GPT for brief summarization, guided by the prompt in the front matter. Because each daily note is mentioned in my weekly note, GPT effectively generates a comprehensive summary for me.
-
-I have attempted to list this plugin in Obsidian's plugin list, but it has not yet been approved. If you appreciate the concept, please [feel free to give the PR a thumbs up](https://github.com/obsidianmd/obsidian-releases/pull/1997).
+I have developed a unique [Obsidian plugin](https://github.com/irbull/obsidian-ai-summary/) that compiles all cited notes and employs the power of GPT for brief summarization, guided by the prompt in the front matter. Because each daily note is mentioned in my weekly note, GPT effectively generates a comprehensive summary for me. This plugin is now listed on the [Obsidian Community Plugins Page](https://obsidian.md/plugins)
 
 I take these two steps further by summarizing my weekly notes once a month, and finally, at the end of the year, I generate a **Year in Review**.
 
