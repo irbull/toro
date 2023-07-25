@@ -5,11 +5,13 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
+import ShowcaseCard from "@components/ShowcaseCard";
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
 import Hero from "@components/Hero.astro";
+import socialIcons from "@assets/socialIcons";
 
 import { SOCIALS } from "@config";
 
@@ -66,10 +68,20 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <div class="flex space-x-2">
+              <LinkButton
+                href="https://www.ianbull.com"
+                className="link-button"
+                title="title"
+              >
+                <Fragment set:html={socialIcons.Github} />
+              </LinkButton>
+
+              <h2>Projects</h2>
+            </div>
             <ul>
               {featuredPosts.map(({ data }) => (
-                <Card
+                <ShowcaseCard
                   href={`/posts/${slugify(data)}`}
                   frontmatter={data}
                   secHeading={false}
@@ -148,6 +160,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
     .all-posts-btn-wrapper {
       @apply my-8 text-center;
+    }
+    .link-button {
+      @apply hover:rotate-6 sm:p-1;
     }
   </style>
 </Layout>

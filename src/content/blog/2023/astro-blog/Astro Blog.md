@@ -4,7 +4,7 @@ pubDatetime: 2023-07-19T15:57:52.737Z
 title: Introducing My New Blogging Platform
 postSlug: astro-blog
 ogImage: ./astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png
-featured: true
+featured: false
 tags:
   - astro
   - netlify

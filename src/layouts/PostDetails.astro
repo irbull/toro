@@ -15,19 +15,18 @@ const { post } = Astro.props;
 const { title, author, description, ogImage, pubDatetime, tags } = post.data;
 
 async function getAssetsOGImageURL() {
-  return new URL(
-    ogImage ? ogImage : `${title}.png`,
-    Astro.url.origin
-  ).href;
+  return new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin).href;
 }
 
 async function getOptimizedOGImageURL() {
   const images = await Astro.glob("/src/content/blog/2023/**/*").then(files => {
-    return files.filter(file => {
-      return file.file?.endsWith(post?.id);
-    }).map(file => {
-      return file.images;
-    })[0];
+    return files
+      .filter(file => {
+        return file.file?.endsWith(post?.id);
+      })
+      .map(file => {
+        return file.images;
+      })[0];
   });
   const optimizedOGImage = images?.[ogImage ?? ""]?.src;
   return new URL(
@@ -37,7 +36,9 @@ async function getOptimizedOGImageURL() {
 }
 
 const { Content } = await post.render();
-const ogUrl = ogImage?.startsWith('/assets') ? await getAssetsOGImageURL() : await getOptimizedOGImageURL() ;
+const ogUrl = ogImage?.startsWith("/assets")
+  ? await getAssetsOGImageURL()
+  : await getOptimizedOGImageURL();
 ---
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
@@ -56,7 +57,11 @@ const ogUrl = ogImage?.startsWith('/assets') ? await getAssetsOGImageURL() : awa
   </div>
   <main id="main-content">
     <h1 class="post-title">{title}</h1>
-    <Datetime datetime={pubDatetime} size="lg" className="my-2" />
+    {
+      pubDatetime && (
+        <Datetime datetime={pubDatetime} size="lg" className="my-2" />
+      )
+    }
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>

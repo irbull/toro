@@ -11,11 +11,13 @@ export async function get() {
     title: SITE.title,
     description: SITE.desc,
     site: SITE.website,
-    items: sortedPosts.map(({ data }) => ({
-      link: `posts/${slugify(data)}`,
-      title: data.title,
-      description: data.description,
-      pubDate: new Date(data.pubDatetime),
-    })),
+    items: sortedPosts
+      .filter(({ data }) => data.pubDatetime)
+      .map(({ data }) => ({
+        link: `posts/${slugify(data)}`,
+        title: data.title,
+        description: data.description,
+        pubDate: new Date(data.pubDatetime!),
+      })),
   });
 }

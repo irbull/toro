@@ -25,7 +25,7 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
           </h3>
         )}
       </a>
-      <Datetime datetime={pubDatetime} />
+      {pubDatetime && <Datetime datetime={pubDatetime} />}
       <p>{description}</p>
     </li>
   );

@@ -4,7 +4,7 @@ pubDatetime: 2023-07-09T15:57:52.737Z
 title: Carnarvon Fastball — Provincial Champions
 postSlug: carnarvon-champions
 ogImage: ./provincials.png
-featured: true
+featured: false
 tags:
   - softball
   - carnarvon
