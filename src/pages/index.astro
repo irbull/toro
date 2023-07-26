@@ -7,26 +7,74 @@ import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import ShowcaseCard from "@components/ShowcaseCard";
 import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import slugify from "@utils/slugify";
 import Hero from "@components/Hero.astro";
-import socialIcons from "@assets/socialIcons";
-
-import { SOCIALS } from "@config";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
-const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
+const featuredProjects = sortedPosts.filter(
+  ({ data }) => data.featured && data.project
+);
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
     <Hero />
+
+    <section id="hero">
+      <h1>Projects</h1>
+      <a
+        target="_blank"
+        href="/rss.xml"
+        class="rss-link"
+        aria-label="rss feed"
+        title="RSS Feed"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="rss-icon"
+          ><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+          <path
+            d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"
+          ></path></svg
+        >
+      </a>
+
+      <p>The following are a collection of Open Source projects I've led.</p>
+    </section>
+    <Hr />
+    {
+      featuredProjects.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Featured Projects</h2>
+            <ul>
+              {featuredProjects.map(({ data }) => (
+                <ShowcaseCard
+                  href={`/posts/${slugify(data)}`}
+                  frontmatter={data}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          <div class="all-posts-btn-wrapper">
+            <LinkButton href="/projects">
+              All Projects
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+              </svg>
+            </LinkButton>
+          </div>
+          <Hr />
+        </>
+      )
+    }
+
     <section id="hero">
       <h1>Posts</h1>
       <a
@@ -50,49 +98,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         about my experiences, learnings, and thoughts on various topics
         including Kubernetes, AI, and Software Engineering.
       </p>
-
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
-            <Socials />
-          </div>
-        )
-      }
     </section>
 
     <Hr />
-
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <div class="flex space-x-2">
-              <LinkButton
-                href="https://www.ianbull.com"
-                className="link-button"
-                title="title"
-              >
-                <Fragment set:html={socialIcons.Github} />
-              </LinkButton>
-
-              <h2>Projects</h2>
-            </div>
-            <ul>
-              {featuredPosts.map(({ data }) => (
-                <ShowcaseCard
-                  href={`/posts/${slugify(data)}`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          <Hr />
-        </>
-      )
-    }
 
     <section id="recent-posts">
       <h2>Recent Posts</h2>

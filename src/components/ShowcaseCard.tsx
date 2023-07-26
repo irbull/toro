@@ -11,14 +11,20 @@ export default function Card({ href, frontmatter, secHeading = true }: Props) {
   const { title, pubDatetime, description } = frontmatter;
   return (
     <li className="my-6">
-      <div className="flex flex-row space-x-2 ">
-        <img
-          src={frontmatter.icon}
-          alt={frontmatter.title}
-          width="48"
-          height="48"
-          className="object-scale-down"
-        />
+      <div className="flex flex-row space-x-2">
+        {frontmatter.icon ? (
+          <img
+            src={frontmatter.icon}
+            alt={frontmatter.title}
+            width="48"
+            height="48"
+            className="w-16 object-scale-down"
+          />
+        ) : (
+          <>
+            <div className="w-16"></div>
+          </>
+        )}
         <div className="grid">
           <a
             href={href}

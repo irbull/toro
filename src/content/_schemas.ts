@@ -12,6 +12,7 @@ export const blogSchema = z
     ogImage: z.string().optional(),
     description: z.string(),
     icon: z.string().optional(),
+    project: z.boolean().optional(),
   })
   .strict();
 

@@ -4,6 +4,7 @@ title: AI Summary Plugin for Obsidian
 postSlug: obsidian-ai-summary-plugin
 ogImage: /assets/og_images/obsidian_og.png
 featured: true
+project: true
 icon: /assets/icons/ai-summary.png
 tags:
   - obsidian
