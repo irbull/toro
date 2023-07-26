@@ -4,38 +4,40 @@ import LinkButton from "@components/LinkButton.astro";
 ---
 
 <section
-	data-testid="hero"
-	class="flex flex-col-reverse items-center justify-center text-center lg:flex-row"
+  data-testid="hero"
+  class="flex flex-col-reverse items-center justify-center text-center lg:flex-row"
 >
-	<div class="flex flex-col items-center lg:mb-0">
-		<div>
-			<p class="text-2xl p-6">
-				My name is <span class="text-skin-accent font-bold"
-					>Ian Bull</span
-				> and I live on west coast of Canada. I am the creator of Zest &
-				<LinkButton
-					className="hover:text-skin-accent"
-					href="https://github.com/eclipsesource/J2V8"
-				>
-					J2V8
-				</LinkButton>, former Eclipse p2 Lead & member of the Eclipse
-				Architecture Council. I am currently a VP at the Carnarvon Ball
-				Club, a coach & community volunteer. I spend my days writing
-				software, managing Kubernetes clusters & training conversational
-				AI models.
-			</p>
-		</div>
-		<div class="mb-10">
-			<Button
-				onclick="window.location.href='/about';"
-				style={"primary"}
-				size={"lg"}
-				class={"flex"}
-				name="learn more"
-				href="/about"
-			>
-				Learn more
-			</Button>
-		</div>
-	</div>
+  <div class="flex flex-col items-center lg:mb-0">
+    <div>
+      <p class="text-2xl p-6">
+        My name is <span class="text-skin-accent font-bold">Ian Bull</span> and
+        I live on west coast of Canada. I am the creator of Zest &
+        <LinkButton
+          className="hover:text-skin-accent"
+          href="https://github.com/eclipsesource/J2V8"
+        >
+          J2V8
+        </LinkButton>, former Eclipse p2 Lead & member of the Eclipse
+        Architecture Council. I am currently a VP at the Carnarvon Ball Club, a
+        coach & community volunteer.
+      </p>
+      <p class="text-2xl p-6">
+        I have a passion for building developer tools and I spend my days
+        writing software, managing Kubernetes clusters & training conversational
+        AI models.
+      </p>
+    </div>
+    <div class="mb-0">
+      <Button
+        onclick="window.location.href='/about';"
+        style={"primary"}
+        size={"lg"}
+        class={"flex"}
+        name="learn more"
+        href="/about"
+      >
+        Learn more
+      </Button>
+    </div>
+  </div>
 </section>
