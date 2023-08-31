@@ -45,7 +45,7 @@ $ npm run dev
 - 0 hints
 ```
 
-## Read the Upgrade Guid
+## Read the Upgrade Guide
 
 Astro provides a detailed migration guide, and I suggest reading it over before you begin. In my case there were a few things that I needed to take care of.
 
