@@ -13,13 +13,15 @@ const { centered = false } = Astro.props;
 <div class={`social-icons ${centered ? "flex" : ""}`}>
   {
     SOCIALS.filter(social => social.active).map(social => (
-      <LinkButton
-        href={social.href}
-        className="link-button"
-        title={social.linkTitle}
-      >
-        <Fragment set:html={socialIcons[social.name]} />
-      </LinkButton>
+      <div class="link-button-parent">
+        <LinkButton
+          href={social.href}
+          className="link-button"
+          title={social.linkTitle}
+        >
+          <Fragment set:html={socialIcons[social.name]} />
+        </LinkButton>
+      </div>
     ))
   }
 </div>
@@ -28,7 +30,7 @@ const { centered = false } = Astro.props;
   .social-icons {
     @apply flex-wrap justify-center gap-1;
   }
-  .link-button {
+  .link-button-parent {
     @apply p-2 hover:rotate-6 sm:p-1;
   }
 </style>

@@ -63,9 +63,6 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  experimental: {
-    assets: true,
-  },
   integrations: [
     tailwind({
       config: {
