@@ -1,12 +1,12 @@
 ---
 author: Ian Bull
 pubDatetime: 2023-08-30
-title: Updating Astro
-postSlug: updating-astro
+title: Updating To Astro 3.0
+postSlug: updating-astro-3-0
 ogImage:
 featured: false
 tags: [astro, npm]
-description: Information on how to update NPM Packages and Astro in particular
+description: Information on how I updated my site to Astro 3.0
 ---
 
 This is a short post that documents how I update my Astro Blog. [Astro 3.0 was announced](https://astro.build/blog/astro-3/) today and I'm going to document the steps I used to update the site.
