@@ -9,7 +9,7 @@ tags: [kubernetes, llm, llama, eks]
 description: How to configure an EKS Kubernetes Cluster to deploy Large Language Models
 ---
 
-Lately, I've been directing a team involved in refining and implementing Large Language Models (LLMs) to aid patients with [scheduling appointments in the medical field](https://mediform.io/). Most of our software infrastructure operates on Kubernetes. Therefore, deploying the expansive language models on the same cluster was an ideal choice.
+Lately, I've been directing a team involved in refining and implementing Large Language Models (LLMs) to aid patients with [scheduling appointments in the medical field](https://mediform.io/). Most of our software infrastructure operates on Kubernetes. Therefore, deploying the LLMs on the same cluster was an ideal choice.
 
 Large language models (LLMs) are typically deployed on Graphics Processing Units (GPUs). The robust parallel processing ability and matrix multiplication functionalities of a GPU render them highly effective not only for fine-tuning but also for deploying LLMs. Numerous professionals are devoted to crafting highly optimized models that can function on Central Processing Units (CPUs) as well. However, for our current projects, we will maximize the use of NVIDIA GPUs.
 
@@ -172,7 +172,7 @@ print(*[(tokenizer.decode(idx), prob) for idx, prob in zip(topk_next_tokens.indi
 
 Before we can utilize this program, we need to initiate a Kubernetes Pod on the GPU. I have constructed a Docker image with the required dependencies and uploaded it to DockerHub. Please feel free to use this image, or any other that you may have.
 
-Here is a very simple manifest that can be used to deploy the container to our cluster. The manifest includes a `nodeSelector` to ensure that the pod is ![[llm-on-k8s.png]]ed on the `gpu-workers`. There are no resource limits or requests specified, so the Pod will use as many resources as it needs.
+Here is a very simple manifest that can be used to deploy the container to our cluster. The manifest includes a `nodeSelector` to ensure that the pod is scheduled on the `gpu-workers`. There are no resource limits or requests specified, so the Pod will use as many resources as it needs.
 
 ```yaml
 # manifest.yaml
