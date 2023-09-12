@@ -9,7 +9,7 @@ tags: [kubernetes, llm, llama, eks]
 description: How to configure an EKS Kubernetes Cluster to deploy Large Language Models
 ---
 
-Lately, I've been directing a team involved in refining and implementing extensive language models to aid patients with [scheduling appointments in the medical field](https://mediform.io/). Most of our software infrastructure operates on Kubernetes. Therefore, deploying the expansive language models on the same cluster was an ideal choice.
+Lately, I've been directing a team involved in refining and implementing Large Language Models (LLMs) to aid patients with [scheduling appointments in the medical field](https://mediform.io/). Most of our software infrastructure operates on Kubernetes. Therefore, deploying the expansive language models on the same cluster was an ideal choice.
 
 Large language models (LLMs) are typically deployed on Graphics Processing Units (GPUs). The robust parallel processing ability and matrix multiplication functionalities of a GPU render them highly effective not only for fine-tuning but also for deploying LLMs. Numerous professionals are devoted to crafting highly optimized models that can function on Central Processing Units (CPUs) as well. However, for our current projects, we will maximize the use of NVIDIA GPUs.
 
