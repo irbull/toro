@@ -43,7 +43,7 @@ const ogUrl = ogImage?.startsWith("/assets")
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
   <Header />
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+  <div class="mx-auto flex w-full max-w-4xl justify-start px-2">
     <button
       class="focus-outline mb-2 mt-8 flex hover:opacity-75"
       onclick="history.back()"
@@ -62,7 +62,7 @@ const ogUrl = ogImage?.startsWith("/assets")
         <Datetime datetime={pubDatetime} size="lg" className="my-2" />
       )
     }
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
+    <article id="article" role="article" class="prose mx-auto mt-8 max-w-4xl">
       <Content />
     </article>
 
@@ -75,7 +75,7 @@ const ogUrl = ogImage?.startsWith("/assets")
 
 <style>
   main {
-    @apply mx-auto w-full max-w-3xl px-4 pb-12;
+    @apply mx-auto w-full max-w-4xl px-4 pb-12;
   }
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;
