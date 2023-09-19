@@ -12,7 +12,7 @@ import path from "path";
 function trimMdExtension(str) {
   if (typeof str !== "string") {
     return "Error: Input must be a string";
-  } else if (str.substr(-3) === ".md") {
+  } else if (str.endsWith(".md")) {
     return str.substring(0, str.length - 3);
   } else {
     return str;
