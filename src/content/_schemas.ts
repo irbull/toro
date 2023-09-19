@@ -1,4 +1,3 @@
-import { nullable, ZodNull } from "astro/zod";
 import { z } from "astro:content";
 
 export const blogSchema = z
