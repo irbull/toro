@@ -10,7 +10,7 @@ tags:
 description: Fixing my ErgoDox EZ
 ---
 
-I spend a lot of time hacking on things. I go through cheap keyboards like a child goes through packaging on Christmas morning, and my wrists hate me for it. In 2017, I decided to invest in an ergonomic mechanical keyboard. I chose the [ErgoDox EZ](https://ergodox-ez.com/) because the split keyboard allowed me to position my hands in line with my shoulders, and I could move it throughout the day. I knew I could build the keyboard myself and save some money, but I also knew it would take me a while to finish the build, and my arms were desperate for relief.
+I spend a lot of time hacking on things. I go through cheap keyboards like a child goes through packaging on Christmas morning, and my wrists hate me for it. In 2017, I decided to invest in an ergonomic mechanical keyboard. I chose the [ErgoDox EZ](https://ergodox-ez.com/) because the split keyboard allowed me to position my hands in line with my shoulders, and I could move it throughout the day. I knew I could build the keyboard myself and save some money, but I also knew it would take me a while to finish the build, and my arms were desperate for relief. The customizability of the order and the direct shipping made this purchase a no-brainer.
 
 For six years, the keyboard has been a workhorse. The online configurator allows me to customize the keyboard for my use. I have experimented with custom layers for VSCode, Obsidian, and Excel. The recent [Keymap](https://www.zsa.io/flash/) app has a Heatmap feature that allows me to see which keys I use the most and how I can optimize my layout.
 
