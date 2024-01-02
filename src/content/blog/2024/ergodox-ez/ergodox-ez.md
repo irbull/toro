@@ -3,7 +3,6 @@ author: Ian Bull
 pubDatetime: 2024-01-02
 title: Fixing my ErgoDox
 postSlug: fix-ergodox-ez
-ogImage:
 featured: false
 tags:
   - ergdox
