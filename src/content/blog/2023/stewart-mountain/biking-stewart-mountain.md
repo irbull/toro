@@ -9,7 +9,7 @@ tags:
 description: "Our recent biking venture to Stewart Mountain was a humbling blend of pedaling and pushing our bikes uphill, rewarding us with spectacular highland views and a gratifying descent back home in Victoria, BC."
 ---
 
-![Biking](biking.jpg)
+![Biking](./biking.jpg)
 
 Yesterday's ride was a humbling reminder of the rugged beauty that surrounds us here in Victoria, BC. Tricia and I set out for what turned into a 2-hour journey of both cycling and bike hiking to the summit of Stewart Mountain.
 
