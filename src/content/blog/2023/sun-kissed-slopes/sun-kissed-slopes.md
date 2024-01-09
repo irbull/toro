@@ -6,7 +6,7 @@ postSlug: sun-kissed-slopes
 featured: false
 tags:
   - skiing
-    - mt_washington
+  - mt_washington
 description: "Our family's ski day at Mount Washington turned into a sunny T-shirt affair, complete with laughter, T-shirt weather, and our youngest, Maggie, leading the charge down the beautiful slopes."
 ---
 
