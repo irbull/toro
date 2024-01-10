@@ -7,7 +7,7 @@ featured: false
 tags:
   - skiing
   - mt_washington
-description: A post Christmas Ski Trip to Mt. Washington
+description: "Our family's ski trip to Mt. Washington was a tapestry of clear skies, spirited runs, cozy lunch breaks, and an afternoon of challenging slopes, all wrapped up in the warmth of togetherness and memorable mountain moments."
 ---
 
 ![Mt Washington](./mt-washington.jpg)

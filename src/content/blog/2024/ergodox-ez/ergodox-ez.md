@@ -7,7 +7,7 @@ featured: false
 tags:
   - ergdox
   - hardwared
-description: Fixing my ErgoDox EZ
+description: "This blog post shares my personal experience with the ErgoDox EZ ergonomic mechanical keyboard, emphasizing its customizable features and durable design, alongside a recent DIY repair that refreshed the keyboard for the new year."
 ---
 
 I spend a lot of time hacking on things. I go through cheap keyboards like a child goes through packaging on Christmas morning, and my wrists hate me for it. In 2017, I decided to invest in an ergonomic mechanical keyboard. I chose the [ErgoDox EZ](https://ergodox-ez.com/) because the split keyboard allowed me to position my hands in line with my shoulders, and I could move it throughout the day. I knew I could build the keyboard myself and save some money, but I also knew it would take me a while to finish the build, and my arms were desperate for relief. The customizability of the order and the direct shipping made this purchase a no-brainer.
