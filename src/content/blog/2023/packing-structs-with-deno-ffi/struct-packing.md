@@ -8,7 +8,7 @@ featured: false
 tags:
   - deno
   - ffi
-description: Packing structures with Deno FFI
+description: "In the post, I discuss the technical journey and challenges of integrating large language model inference into Typescript using Deno's FFI, particularly when interfacing complex data structures between Rust and Deno, and share some code snippets and resources that helped navigate these complexities."
 ---
 
 Recently, I've been working on a project that integrates large language model (LLM) inference with Deno. This project extensively utilizes Deno's Foreign Function Interface (FFI) since the inference is conducted in C++ and Rust. The project is intended to bring the power of LLMs to Typescript.
