@@ -14,7 +14,7 @@ If there's a place where the spirit of adventure merges with the tranquility of 
 
 **Home on Wheels at Green Point**
 
-![RV][./rv.jpeg]
+![RV](./rv.jpeg)
 
 Our first stop was Green Point Campground, where we parked our home-on-wheels amidst the lush coastal rainforest that meets the expansive Pacific. Waking up to the sound of the ocean's breath and the sight of towering cedars was nothing short of magical. It’s here where you feel the true essence of the wild west coast.
 
