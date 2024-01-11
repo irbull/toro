@@ -35,7 +35,7 @@ Once installed and configured, open a note with links to other notes. Then selec
 
 The Obsidian AI Summary Plugin can be used to generate weekly summaries of your note. For example, if you create a weekly note called `2023-W01` with the following content:
 
-```
+```bash
 ---
 Prompt: Write me a 2-3 paragraph summary of the work I completed this week in the first person. The work completed is below the '# 🚀 Work Completed' section.
 ---
