@@ -1,6 +1,6 @@
 ---
 author: Ian Bull
-pubDatetime: 2023-07-05
+pubDatetime: 2022-07-05
 title: "Rolling into the Wild: Our RV Adventure to Tofino"
 postSlug: tofino-2022
 featured: false

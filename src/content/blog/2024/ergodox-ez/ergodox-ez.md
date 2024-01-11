@@ -6,7 +6,8 @@ postSlug: fix-ergodox-ez
 featured: false
 tags:
   - ergdox
-  - hardwared
+  - hardware
+  - technology
 description: "This blog post shares my personal experience with the ErgoDox EZ ergonomic mechanical keyboard, emphasizing its customizable features and durable design, alongside a recent DIY repair that refreshed the keyboard for the new year."
 ---
 

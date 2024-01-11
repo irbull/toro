@@ -7,6 +7,7 @@ ogImage: /assets/og_images/obsidian_og.png
 featured: false
 tags:
   - obsidian
+  - technology
 description: An overview of how I make use of Obsidian for my daily notes.
 ---
 

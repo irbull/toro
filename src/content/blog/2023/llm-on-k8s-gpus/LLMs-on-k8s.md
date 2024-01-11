@@ -5,7 +5,7 @@ title: Running LLMs on Kubernetes
 postSlug: llms_on_k8s
 ogImage: /assets/og_images/llm-on-k8s.png
 featured: false
-tags: [kubernetes, llm, llama, eks]
+tags: [kubernetes, llm, llama, eks, technology]
 description: How to configure an EKS Kubernetes Cluster to deploy Large Language Models
 ---
 

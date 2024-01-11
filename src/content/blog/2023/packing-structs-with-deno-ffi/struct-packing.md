@@ -8,6 +8,7 @@ featured: false
 tags:
   - deno
   - ffi
+  - technology
 description: "In the post, I discuss the technical journey and challenges of integrating large language model inference into Typescript using Deno's FFI, particularly when interfacing complex data structures between Rust and Deno, and share some code snippets and resources that helped navigate these complexities."
 ---
 

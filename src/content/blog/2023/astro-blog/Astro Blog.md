@@ -9,6 +9,7 @@ tags:
   - astro
   - netlify
   - obsidian
+  - technology
 description: My new blogging platform built on Astro Build and Astro Paper.
 ---
 

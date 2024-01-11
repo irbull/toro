@@ -5,7 +5,7 @@ title: Updating To Astro 3.0
 postSlug: updating-astro-3-0
 ogImage:
 featured: false
-tags: [astro, npm]
+tags: [astro, npm, technology]
 description: Information on how I updated my site to Astro 3.0
 ---
 

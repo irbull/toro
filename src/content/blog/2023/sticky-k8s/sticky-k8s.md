@@ -6,8 +6,9 @@ postSlug: sticky-k8s
 ogImage: /assets/og_images/sticky_k8s.png
 featured: false
 tags:
-  - Kubernetes
-  - Deno
+  - kubernetes
+  - deno
+  - technology
 description: How to enable sticky sessions with Kubernetes
 ---
 
