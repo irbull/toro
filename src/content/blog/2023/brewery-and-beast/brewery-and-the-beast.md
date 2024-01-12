@@ -1,6 +1,6 @@
 ---
 author: Ian Bull
-pubDatetime: 2023-10-26
+pubDatetime: 2023-09-26
 title: "A Feast for the Senses at Brewery and The Beast"
 postSlug: brewery-and-the-beast
 featured: false
