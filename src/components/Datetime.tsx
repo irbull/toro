@@ -4,9 +4,15 @@ export interface Props {
   datetime: string | Date;
   size?: "sm" | "lg";
   className?: string;
+  renderTime?: boolean;
 }
 
-export default function Datetime({ datetime, size = "sm", className }: Props) {
+export default function Datetime({
+  datetime,
+  size = "sm",
+  className,
+  renderTime = false,
+}: Props) {
   return (
     <div className={`flex items-center space-x-2 opacity-80 ${className}`}>
       <svg
@@ -21,11 +27,26 @@ export default function Datetime({ datetime, size = "sm", className }: Props) {
       </svg>
       <span className="sr-only">Posted on:</span>
       <span className={`italic ${size === "sm" ? "text-sm" : "text-base"}`}>
-        <FormattedDatetime datetime={datetime} />
+        {renderTime ? (
+          <FormattedDatetime datetime={datetime} />
+        ) : (
+          <FormattedDate datetime={datetime} />
+        )}
       </span>
     </div>
   );
 }
+const FormattedDate = ({ datetime }: { datetime: string | Date }) => {
+  const myDatetime = new Date(datetime);
+
+  const date = myDatetime.toLocaleDateString(LOCALE, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  return <>{date}</>;
+};
 
 const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
   const myDatetime = new Date(datetime);
