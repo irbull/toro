@@ -1,6 +1,6 @@
 ---
 author: Ian Bull
-pubDatetime: 2024-01-16
+pubDatetime: 2022-07-23
 title: "Setting Off on Our Cross-Canada RV Adventure"
 postSlug: mabel-lake
 featured: false
