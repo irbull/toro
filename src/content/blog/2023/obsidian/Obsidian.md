@@ -64,7 +64,7 @@ While I am using Obsidian for ideas and thoughts that I have, the majority of th
 
 In order to facilitate the creation of daily notes in a consistent manner, I have devised a template. I utilize the [Periodic Notes Plugin](https://github.com/liamcain/obsidian-periodic-notes) and the [Calendar Plugin](https://github.com/liamcain/obsidian-calendar-plugin). By selecting an entry from the calendar, a daily note derived from the subsequent template is automatically generated.
 
-```
+```bash
 ---
 Tags:
 Date: {{date}}
@@ -97,7 +97,7 @@ I use the "To-Do" section to ensure that I complete my daily tasks, and I take a
 
 Each week, I create a summary of my notes. I used to do this by hand, but with GPT, I've semi-automated this process. I create a weekly template every Friday that references the daily notes from that week.
 
-```
+```bash
 ---
 Prompt: Write me a 2-3 paragraph summary of the work I completed this week in the first person. The work completed is below the '# 🚀 Work Completed' section.
 ---
