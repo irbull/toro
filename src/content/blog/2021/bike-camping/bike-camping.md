@@ -7,7 +7,7 @@ featured: false
 tags:
   - camping
   - biking
-description: "This blog post narrates the adventures of a bike camping trip on Salt Spring Island, highlighting the challenges of unexpected weather, the beauty of nature, and the warmth of camaraderie."
+description: "I share my adventures and camaraderie from a memorable bike camping trip on Salt Spring Island, where unexpected weather and the stunning beauty of nature made for an extraordinary experience."
 ---
 
 ![Leaving](./leaving.jpeg)
