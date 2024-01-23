@@ -11,7 +11,7 @@ tags:
 description: "On our day trip from Karlsruhe to Engelberg, Jochen and I enjoyed an unforgettable spring skiing adventure at Titlis Mountain, complete with perfect weather, excellent snow conditions, and a delightful snack at a Skihütte stand amidst the stunning Swiss Alps."
 ---
 
-![Alps](alps.jpeg)
+![Alps](./alps.jpeg)
 
 Just recently, I experienced the kind of day that every ski enthusiast dreams about. My friend Jochen and I embarked on a day trip to Engelberg, Switzerland, to ski at the breathtaking Titlis Mountain in the Alps. It was a spring skiing adventure that combined perfect weather, excellent snow, and the unmatched beauty of the Swiss Alps.
 
@@ -21,7 +21,7 @@ Our day began early on Sunday, with the excitement of the trip making it easy to
 
 **Arrival at Titlis Mountain**
 
-![Lift](lift.jpeg)
+![Lift](./lift.jpeg)
 
 As we arrived at Titlis Mountain, we were greeted by what skiers fondly call a "bluebird day" – not a cloud in the sky, with the sun shining brightly over the pristine slopes. The mountain's high elevation ensured that the snow conditions were ideal, despite it being spring.
 
@@ -31,7 +31,7 @@ The skiing was nothing short of wonderful. Each run offered breathtaking views a
 
 **A Delightful Snack at the Skihütte**
 
-![Skihütte](skihutte.jpeg)
+![Skihütte](./skihutte.jpeg)
 
 Around midday, we took a break at a cozy Skihütte stand. Here, we enjoyed a well-deserved snack, refueling for the afternoon’s skiing. The atmosphere was jovial and quintessentially Swiss, with other skiers sharing their stories and the Skihütte offering a warm and welcoming respite.
 
@@ -41,7 +41,7 @@ Around midday, we took a break at a cozy Skihütte stand. Here, we enjoyed a wel
 
 As the afternoon unfolded, we continued to enjoy the slopes. The beauty of Engelberg and the surrounding Alps was mesmerizing. Skiing with the backdrop of towering mountains and panoramic vistas was an experience I’ll always cherish.
 
-![Engelnerg](engelberg.jpeg)
+![Engelnerg](./engelberg.jpeg)
 
 **Reflections on a Perfect Ski Day**
 
