@@ -1,6 +1,6 @@
 ---
 author: Ian Bull
-pubDatetime: 2024-01-23
+pubDatetime: 2020-08-12
 title: "Discovering Paradise Close to Home: Our Camping Trip to Buttle Lake"
 postSlug: buttle-lake-2020
 featured: false
@@ -11,7 +11,7 @@ description: "Our family camping trip to Buttle Lake in Strathcona Park, with pa
 
 ![Buttle Lake](./pano.jpg)
 
-This summer, when our plans to travel back to Ontario were thwarted by Covid-19, my family - my wife Tricia, and our daughters Sadie, Lily, and Maggie - found adventure much closer to home. We decided to explore the pristine beauty of Buttle Lake in Strathcona Park on Vancouver Island, a gem in our own backyard.
+This summer, when our plans to travel back to Ontario were thwarted by Covid-19, we found adventure much closer to home. We decided to explore the pristine beauty of Buttle Lake in Strathcona Park on Vancouver Island, a gem in our own backyard.
 
 **Paddle Boarding Adventures on Buttle Lake**
 
