@@ -8,7 +8,7 @@ tags:
   - mt_washington
   - biking
   - hiking
-description:
+description: "This summer, our family's adventure at Mt. Washington on Vancouver Island included thrilling downhill biking lessons, daily hikes with wildlife encounters, an exhilarating zip line experience, a challenging hike to Helen McKenzie Lake, and relaxing evenings enjoying the mountain's tranquility."
 ---
 
 ![Title](./title.jpg)
