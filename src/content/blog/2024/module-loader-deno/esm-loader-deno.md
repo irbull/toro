@@ -23,11 +23,11 @@ There are lots of good resources explaining _why_ this happens, but essentially 
 
 ## What About Two Different Versions?
 
-Now, what happens if two different versions of the same module are loaded?
+This is where most explanations end, and most people assume that the module will only ever be loaded once, meaning that you store resources (such as DB connections) in the modules state. But what happens if two different versions of the same module are loaded?
 
 ![Two Versions](./two-versions.png)
 
-In this case, these are considered two different modules and they will each be loaded separately and have their own state. While this may seem easy to spot in this example, imagine that `increment` is transitively included from some other modules, and you are unaware of which versions they are using.
+In this case, these are considered two different modules and they will each be loaded separately and have their own state. If the module acquired some resource such as a file handle or connection, that resource would be acquired twice. While this may seem easy to spot in this example, what if `increment` is transitively included from some other modules, and you are unaware of which versions they are using?
 
 ## What About Version Ranges
 
@@ -37,7 +37,7 @@ Now things get even more interesting if you specify version ranges. What if two 
 
 In this case, the first import statement pins the import to `0.1.1`. The second statement will chose any version `[0.1.0,0.2)`, which means anything from `0.1.0` up to, but not including `0.2`. Since `0.1.1` falls in this range and it's already been selected, it will be used for the second import.
 
-But what if you flip the imports?
+But what if you change the order of the imports?
 
 ![Import Order](./ranges-flip.png)
 
