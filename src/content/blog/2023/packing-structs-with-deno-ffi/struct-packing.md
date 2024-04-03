@@ -51,7 +51,7 @@ const c_ptr = Deno.UnsafePointer.create(dv.getBigUint64(0, endianess));
 const eos = dv.getInt8(8) === 1;
 ```
 
-This code will construct a Deno Pointer from the first 8 bytes of the structure. For 32-bit systems, you would need to use `getUint32`. The `endianness` is used to specify whether the system uses [big vs little endian](https://en.wikipedia.org/wiki/Endianness). The [ByteType library uses a really cool trick to determine this](https://github.com/denosaurs/byte_type/blob/main/utils.ts). This code will also fetch the byte at position `8` and compare it with `1`, the value representing `true` in C.
+This code will construct a Deno Pointer from the first 8 bytes of the structure. For 32-bit systems, you would need to use `getUint32`. The `endianness` is used to specify whether the system uses [big vs little endian](https://en.wikipedia.org/wiki/Endianness). The [ByteType library uses a really cool trick to determine this](https://github.com/denosaurs/byte_type/blob/main/src/util.ts#L6). This code will also fetch the byte at position `8` and compare it with `1`, the value representing `true` in C.
 
 Once you have a pointer to the string, you can create a JavaScript string quite easily:
 
