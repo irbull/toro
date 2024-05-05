@@ -23,7 +23,7 @@ Designing and building systems that make use of a Large Language Model is a comp
 
 To help increase developer productivity, I asked the question, _What if we could put local LLMs in the hands of web developers?_ More specifically, **I drew inspiration from Deno and Llama and explored a vision to build an API for Large Language Model Inference, combining the power of Llama with TypeScript Web APIs.**
 
-I used [Llama.cpp](https://github.com/ggerganov/llama.cpp) as the kernel and using [Bindgen](https://github.com/rust-lang/rust-bindgen), I generated a set of Rust bindings for the API. I then created a thin Rust API that handled the `unsafe` calls and pointer arithmetic required to interface with the C++ API (I called this Rusty Llama). From there, I built an idiomatic Rust API called Llama.rs that provides a higher-level API for working with Large Language Models. Llama.rs includes functions to help manage the context window, perform grammar-based generation, and support different sampling techniques.
+I used [Llama.cpp](https://github.com/ggerganov/llama.cpp) as the kernel and using [Bindgen](https://github.com/rust-lang/rust-bindgen), I generated a set of Rust bindings for the API. I then created a thin Rust API that handled the `unsafe` calls and pointer arithmetic required to interface with the C++ API (I called this crate, Rusty Llama). From there, I built an idiomatic Rust API called Llama.rs that provides a higher-level API for working with Large Language Models. Llama.rs includes functions to help manage the context window, perform grammar-based generation, and support different sampling techniques.
 
 ![Llama Stack](./llama-stack.png)
 
