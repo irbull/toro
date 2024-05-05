@@ -19,7 +19,7 @@ At the AI Summit In Munich, I presented two talks and helped run a workshop aime
 
 ## Local LLM Inference with Web APIs
 
-Designing and building systems that make use of a Large Language Model is a complex tasks. Most platforms are designed around Python and assume access to a powerful GPU. This setup works well during the prototype stage, where researchers want to iterate quickly and have the hardware in the lab. However, during development, when reproducible builds are crucial and developers need to iterate quickly on their MacBooks, this setup isn't ideal.
+Designing and building systems that make use of a Large Language Model is a complex task. Most platforms are designed around Python and assume access to a powerful GPU. This setup works well during the prototype stage, where researchers want to iterate quickly and have the hardware in the lab. However, during development, when reproducible builds are crucial and developers need to iterate quickly on their MacBooks, this setup isn't ideal.
 
 To help increase developer productivity, I asked the question, _What if we could put local LLMs in the hands of web developers?_ More specifically, **I drew inspiration from Deno and Llama and explored a vision to build an API for Large Language Model Inference, combining the power of Llama with TypeScript Web APIs.**
 
