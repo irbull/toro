@@ -17,7 +17,7 @@ In late April, I had the pleasure of visiting Germany for 10 days. I spent time 
 
 At the AI Summit In Munich, I presented two talks and helped run a workshop aimed at model inference. In the first talk, I presented Llama.ts, a platform that integrates [Llama model inference](https://github.com/ggerganov/llama.cpp) with [Deno](https://deno.com/). In the second talk, I explored how we use AWS GPU nodes and Kubernetes to scale our AI solution.
 
-### Local LLM Inference with Web APIs
+## Local LLM Inference with Web APIs
 
 Designing and building systems that make use of a Large Language Model is a complex tasks. Most platforms are designed around Python and assume access to a powerful GPU. This setup works well during the prototype stage, where researchers want to iterate quickly and have the hardware in the lab. However, during development, when reproducible builds are crucial and developers need to iterate quickly on their MacBooks, this setup isn't ideal.
 
@@ -37,7 +37,7 @@ The game, called **Discovery Island**, starts with a few basic elements (Water, 
 
 In Mediform, we use a technology stack based on Llama.ts to serve our custom models. Our models are fine tuned Llama models aimed at medical reception desks.
 
-### Llamas, Clusters, GPUs and **All That Jazz**
+## Llamas, Clusters, GPUs and **All That Jazz**
 
 In my second talk, I described how we designed our Kubernetes cluster to scale GPU nodes for hosting our custom 7-billion-parameter large language model. The key to our setup is something we call **Scale to Zero**, which allows us to scale our model inference servers down to zero for specific models, enabling the Kubernetes AutoScaler to completely turn off unused GPU nodes. We use both time-based and load-based criteria to scale our nodes to meet the needs of our users.
 
@@ -45,9 +45,9 @@ Each GPU node group is configured with the [Nvidia GPU Operator](https://docs.nv
 
 We built our cluster using EKS and used a combination of `g4dn` and `g5` nodes, both of which have an Nvidia GPU (T4 and A10). These are not particularly powerful GPUs, and unfortunately, Amazon charges a ridiculous on-demand price. However, Amazon also provides the rest of the network infrastructure (storage, DNS, load balancers, VPNs, etc.) that we need to run a scalable web application. Moving forward, we may consider a hybrid model with self-hosted GPUs and AWS infrastructure.
 
-### Conclusion
+## Conclusion
 
-My 10-day visit to Germany was both productive and enlightening. At our headquarters in Karlsruhe, I further developed Mediform, our AI-powered medical reception solution, and enjoyed various cultural and team-building activities. The AI Summit in Munich was a particular highlight, where I introduced Llama.ts, a platform designed to empower web developers with local LLM capabilities, and shared our approaches to scaling AI solutions using Kubernetes and AWS GPU nodes. These experiences not only advanced our projects but also provided valuable insights into the practical challenges and opportunities in deploying AI technologies in diverse environments.
+I had a great time during my 10-day visit to Germany. It was great to reconnect with several old friends at the AI Summit and hack on my Rust/TypeScript-based LLM inference server with a few colleagues. On my last day, I enjoyed touring the Olympiastadion in Munich before catching my flight back to the West Coast of Canada.
 
 [My slides for both talks are available on pitch.com](https://pitch.com/v/ai-building-an-api-for-large-language-model-inference-wmtxt9)
 
