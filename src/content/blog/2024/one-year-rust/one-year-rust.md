@@ -60,30 +60,10 @@ Rust provides memory safety when used correctly but doesn't offer any guarantees
 - Wrote a set of regression tests to ensure the API works as expected.
 - Wrote a set of stress tests to ensure that the API is solid.
 
+To ensure our inference server would scale, I designed a multithreaded API to handle concurrent requests. This required me to make heavy use of many types in the `std::sync` library, including `Arc` and `RwLock`. I synchronized the calls used to compute the logits and embeddings using these libraries. This design provided me with the thread safety of Rust and the performance of Llama.cpp.
+
 # Next Steps
 
 While I have been programming in Rust for a year now, I still consider myself fairly new to the language. I've used several common crates such as `anyhow`, `thiserror`, `regex`, and `itertools`, and I've done a few deep dives into the [Deno](https://github.com/denoland/deno) codebase (over 100k lines of Rust) and the [Rust bump allocator](https://github.com/fitzgen/bumpalo). I haven't had the opportunity to build web servers in Rust yet, and although I've built multi-threaded APIs, I haven't explored the world of Asynchronous Rust Runtimes (such as Tokio) yet.
 
 The next book on my reading list is [Rust for Rustaceans](https://nostarch.com/rust-rustaceans).
-
-```
-+----------------------------------------------------+
-|          You made it to the Fe-nish line!          |
-+--------------------------  ------------------------+
-                          \\/
-     ▒▒          ▒▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒          ▒▒
-   ▒▒▒▒  ▒▒    ▒▒        ▒▒  ▒▒        ▒▒    ▒▒  ▒▒▒▒
-   ▒▒▒▒  ▒▒  ▒▒            ▒▒            ▒▒  ▒▒  ▒▒▒▒
- ░░▒▒▒▒░░▒▒  ▒▒            ▒▒            ▒▒  ▒▒░░▒▒▒▒
-   ▓▓▓▓▓▓▓▓  ▓▓      ▓▓██  ▓▓  ▓▓██      ▓▓  ▓▓▓▓▓▓▓▓
-     ▒▒▒▒    ▒▒      ████  ▒▒  ████      ▒▒░░  ▒▒▒▒
-       ▒▒  ▒▒▒▒▒▒        ▒▒▒▒▒▒        ▒▒▒▒▒▒  ▒▒
-         ▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▓▓▒▒▓▓▒▒▒▒▒▒▒▒
-           ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-             ▒▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒
-           ▒▒  ▒▒▒▒▒▒▒▒▒▒██████▒▒▒▒▒▒▒▒▒▒  ▒▒
-         ▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▒▒
-       ▒▒    ▒▒    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▒▒    ▒▒
-       ▒▒  ▒▒    ▒▒                  ▒▒    ▒▒  ▒▒
-           ▒▒  ▒▒                      ▒▒  ▒▒
-```
