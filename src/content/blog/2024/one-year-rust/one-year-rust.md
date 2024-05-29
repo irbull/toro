@@ -3,7 +3,7 @@ author: Ian Bull
 pubDatetime: 2024-05-24
 title: One Year With Rust
 postSlug: one-year-rust
-ogImage:
+ogImage: /assets/og_images/rusty_crab.png
 featured: false
 tags:
   - technology
@@ -43,7 +43,7 @@ This project also forced me to set up a proper CI/CD system for a Rust project. 
 
 # Rust @ The Gym
 
-While learning new technology, I often enjoy finding a good podcast to listen to at the gym. I find that it motivates me to go to the gym since I don't often have time at home to listen. Fifteen years ago, I listened to the [Java Posse Podcast](http://javaposse.com/) while teaching Java to university students, and six years ago, I tuned into PodCTL while learning [Kubernetes](https://open.spotify.com/show/4Bumge1mZHlEoDSckSCWs5). Last year, I started listening to old episodes of [New Rustacean](https://newrustacean.com/)—a 15- to 20-minute podcast about learning the Rust programming language. The downside of this approach was that I would often return from the gym and spend the next few hours working through the examples that Chris discussed.
+While learning new technology, I often enjoy finding a good podcast to listen to at the gym. I find that it motivates me to go to the gym since I don't often have time at home to listen. Fifteen years ago, I listened to the [Java Posse Podcast](http://javaposse.com/) while teaching Java to university students, and six years ago, I tuned into [PodCTL](https://open.spotify.com/show/4Bumge1mZHlEoDSckSCWs5) while learning Kubernetes. Last year, I started listening to old episodes of [New Rustacean](https://newrustacean.com/)—a 15- to 20-minute podcast about learning the Rust programming language. The downside of this approach was that I would often return from the gym and spend the next few hours working through the examples that Chris discussed.
 
 # Levelling Up
 
@@ -62,11 +62,9 @@ Rust provides memory safety when used correctly but doesn't offer any guarantees
 
 # Next Steps
 
-The next book on my reading list is [Rust for Rustaceans](https://www.amazon.ca/Rust-Rustaceans-Programming-Experienced-Developers-ebook).
-
 While I have been programming in Rust for a year now, I still consider myself fairly new to the language. I've used several common crates such as `anyhow`, `thiserror`, `regex`, and `itertools`, and I've done a few deep dives into the [Deno](https://github.com/denoland/deno) codebase (over 100k lines of Rust) and the [Rust bump allocator](https://github.com/fitzgen/bumpalo). I haven't had the opportunity to build web servers in Rust yet, and although I've built multi-threaded APIs, I haven't explored the world of Asynchronous Rust Runtimes (such as Tokio) yet.
 
-The next book on my reading list is [Rust for Rustaceans](https://www.amazon.ca/Rust-Rustaceans-Programming-Experienced-Developers-ebook).
+The next book on my reading list is [Rust for Rustaceans](https://nostarch.com/rust-rustaceans).
 
 ```
 +----------------------------------------------------+
