@@ -35,7 +35,7 @@ While I didn't find simply _reading about Rust_ very effective, the one exceptio
 
 # My First Project
 
-Last summer, after returning from vacation, I started my first real Rust project. A [Mediform](https://mediform.io/) we've been training large language models for digital reception desks. There are a variety of data formats used in the LLM community, and we found ourselves constantly converting between them. I wrote a CLI tool that could convert between different formats. I designed an intermediate representation and built parsers for each format we needed to support. The parsers would build up the intermediate representation, and then simple graph walkers could traverse the tree and produce the desired output.
+Last summer, after returning from vacation, I started my first real Rust project. At [Mediform](https://mediform.io/) we've been training large language models for digital reception desks. There are a variety of data formats used in the LLM community, and we found ourselves constantly converting between them. I wrote a CLI tool that could convert between different formats. I designed an intermediate representation and built parsers for each format we needed to support. The parsers would build up the intermediate representation, and then simple graph walkers could traverse the tree and produce the desired output.
 
 This project forced me to face the complexities of Rust head-on. I'm sure I could have built the initial version with TypeScript in half the time, but with Rust, the incremental cost of continued development dropped significantly. Rust's static checks meant that whenever I added new features, I could feel confident that the tool would continue to work.
 

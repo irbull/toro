@@ -10,6 +10,7 @@ tags:
   - llama
   - llms
   - technology
+  - rust
 description: "In this post I share insights from my 10-day visit to Germany, where I advanced AI-powered projects and explored scalable technologies, while also enjoying cultural and team-building experiences."
 ---
 
