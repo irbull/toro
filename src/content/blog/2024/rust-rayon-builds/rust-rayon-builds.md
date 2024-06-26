@@ -20,7 +20,7 @@ I couldn't leave it like this, especially since our build timeout is set to an h
 
 ## The build.rs File
 
-Most Rustaceans will not need to worry about a `build.rs` file. The `build.rs`, or "Build Script," is an advanced feature used if you need to:
+Most Rustaceans will not need to worry about a `build.rs` file. The `build.rs` (also known as the "Build Script") is an advanced feature used if you need to:
 
 1. Build a C library as part of your crate.
 2. Find and link to a C library as part of your build.
@@ -42,7 +42,7 @@ fn main() {
 
 The Build Script allows you to customize the compiler, compiler flags, linker options, and more.
 
-As the name implies, `build.rs` is a Rust program allowing you to customize your build using Rust and Rust dependencies.
+As the file extension implies, `build.rs` is a Rust program allowing you to customize your build using Rust and Rust dependencies.
 
 ## Rust FFI
 
