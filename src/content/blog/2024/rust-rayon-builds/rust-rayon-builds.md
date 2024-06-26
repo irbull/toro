@@ -8,7 +8,7 @@ featured: false
 tags:
   - rust
   - technology
-description: "In this post I describe how I reduced our Llama.rs build times from 1.5h to 16min using Rayon."
+description: In this post I describe how I reduced our Llama.rs build times from 1.5h to 16min using Rayon.
 ---
 
 Those of you who have read my blog recently know that I've been working on [Rust and TypeScript bindings for Large Language Models (LLMs)](/blog/2024/llamas-and-dinosaurs/llamas-and-dinosaurs). For those following the LLM space, you'll also be aware that this domain is moving at breakneck speed. Keeping libraries up to date is a full-time job, and it seems that each week everyone changes their technology stack.
