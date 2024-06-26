@@ -57,11 +57,7 @@ const ogUrl = ogImage?.startsWith("/assets")
   </div>
   <main id="main-content">
     <h1 class="post-title">{title}</h1>
-    {
-      pubDatetime && (
-        <Datetime datetime={pubDatetime} size="lg" className="my-2" />
-      )
-    }
+
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-4xl">
       <Content />
     </article>
