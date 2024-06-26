@@ -5,12 +5,13 @@ title: Introducing My New Blogging Platform
 postSlug: astro-blog
 ogImage: /assets/og_images/astronaut_enjoying_a_beer_while_relaxing_on_the_moon.png
 featured: false
+project: false
 tags:
   - astro
   - netlify
   - obsidian
   - technology
-description: My new blogging platform built on Astro Build and Astro Paper.
+description: My new blogging platform built on Astro Build and Astro Paper
 ---
 
 ## Table of Contents
