@@ -45,7 +45,11 @@ const FormattedDate = ({ datetime }: { datetime: string | Date }) => {
     day: "numeric",
   });
 
-  return <>June 25, 2024</>;
+  return (
+    <>
+      <time datetime="{datetime}">{date}</time>
+    </>
+  );
 };
 
 const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
