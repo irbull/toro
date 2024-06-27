@@ -46,7 +46,7 @@ const FormattedDate = ({ datetime }: { datetime: string | Date }) => {
   });
   const dateISO = myDatetime.toISOString().split("T")[0];
 
-  return <>Posted: {date}</>;
+  return <>{date}</>;
 };
 
 const FormattedDatetime = ({ datetime }: { datetime: string | Date }) => {
