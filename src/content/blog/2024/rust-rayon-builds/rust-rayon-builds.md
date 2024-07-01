@@ -12,6 +12,8 @@ tags:
 description: In this post I describe how I reduced our Llama.rs build times from 1.5h to 16min using Rayon
 ---
 
+June 26th, 2024
+
 Those of you who have read my blog recently know that I've been working on [Rust and TypeScript bindings for Large Language Models (LLMs)](/blog/2024/llamas-and-dinosaurs/llamas-and-dinosaurs). For those following the LLM space, you'll also be aware that this domain is moving at breakneck speed. Keeping libraries up to date is a full-time job, and it seems that each week everyone changes their technology stack.
 
 When I started working with [Llama.cpp](https://github.com/ggerganov/llama.cpp), there was a single `cuda` file. The build system was relatively easy, and my custom `build.rs` simply used the `nvcc` compiler to build this file and link it with the few other `.cpp` files in the project. In March 2024, the project was refactored into about 20 `cuda` files. Instead of building a single file, I needed to iterate over all 20 files, build them, and add those 20 object files to the linker.
