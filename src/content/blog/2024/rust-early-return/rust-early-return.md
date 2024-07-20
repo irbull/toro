@@ -1,7 +1,7 @@
 ---
 author: Ian Bull
 pubDatetime: 2024-07-20
-title: "Early Return in Rust Nightly?"
+title: "Early Return in Rust Nightly"
 postSlug: rust-early-return
 ogImage: /assets/og_images/early-return-rust.png
 featured: false
