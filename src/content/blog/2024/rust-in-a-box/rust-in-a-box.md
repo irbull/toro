@@ -1,7 +1,7 @@
 ---
 author: Ian Bull
 pubDatetime: 2024-08-10
-title: "Rust: Put It in a Box and Win It"
+title: "Rust - Put It in a Box and Win It"
 postSlug: rust-in-a-box
 ogImage: /assets/og_images/rust_in_a_box.png
 featured: false
