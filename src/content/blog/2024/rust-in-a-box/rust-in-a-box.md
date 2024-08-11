@@ -8,6 +8,7 @@ featured: false
 tags:
   - rust
   - technology
+  - deno
 description: "An eight-line changeset in Deno led me to question how wrapping a large structure in a `Box` improves performance, and if this approach works in general."
 ---
 
