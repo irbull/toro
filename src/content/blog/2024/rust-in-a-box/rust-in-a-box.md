@@ -1,14 +1,14 @@
 ---
 author: Ian Bull
 pubDatetime: 2024-08-10
-title: "Put it in a box and win it"
+title: "Rust: Put It in a Box and Win It"
 postSlug: rust-in-a-box
 ogImage: /assets/og_images/rust_in_a_box.png
 featured: false
 tags:
   - rust
   - technology
-description: "An eight line changeset in Deno led me to question how wrapping a large structure in a Box improves performance and if this approach works in general."
+description: "An eight-line changeset in Deno led me to question how wrapping a large structure in a `Box` improves performance, and if this approach works in general."
 ---
 
 While I was on vacation, a small (8-line) [Denoland changeset caught my attention](https://github.com/denoland/deno/commit/930ccf928aee3ce5befc0a7494e0f9caaf0c8c63). The changeset improved HTTP performance by about 10% simply by wrapping a stream in a `Box`. This led to all sorts of questions from me, so I decided to dive down the rabbit hole.
