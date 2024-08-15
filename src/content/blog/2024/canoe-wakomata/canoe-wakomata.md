@@ -3,7 +3,7 @@ author: Ian Bull
 pubDatetime: 2024-08-14
 title: "Canoeing Around Lake Wakomata"
 postSlug: canoe-wakomata-2024
-ogImage: /assets/og_images/shore.jpg
+ogImage: /assets/og_images/shore.png
 featured: false
 tags:
   - family
@@ -16,7 +16,7 @@ While we live on the West Coast in Victoria, BC, both my wife and I are original
 
 My in-laws own a camp north of Blind River on the Chapleau Highway (Highway 129), located on Wakomata Lake. Wakomata Lake spans over 6,000 acres and features a large island at its center. There are two small businesses that rent out cabins on the lake: [Snowshoe Camp Resort](https://snowshoecamp.com/) and [Wakomata Lake Cottages](https://www.wakomatalakecottages.com/). Besides these cabins, there is also a handful of privately-owned camps, including the one owned by my in-laws.
 
-![Canoe](assets/og_images/shore.jpg)
+![Canoe](./shore.jpg)
 
 I built a canoe in my 20s, and I haven't managed to ship it to Victoria, so it lives at camp. This year, Tricia and I and our three teenage children decided to take the canoe and paddle around the island.
 
