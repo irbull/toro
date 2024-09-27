@@ -8,7 +8,7 @@ featured: false
 tags:
   - Rust
   - OpenAI
-  - LLM
+  - llms
 description: "In this article, I explore the integration of Large Language Models (LLMs) with Rust, demonstrating how to create efficient software tools using Rust's powerful features like safety and concurrency alongside libraries such as Askama and Serde for structured outputs and robust templating."
 ---
 
