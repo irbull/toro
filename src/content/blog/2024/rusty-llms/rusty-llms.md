@@ -1,6 +1,6 @@
 ---
 author: Ian Bull
-pubDatetime: 2024-09-17
+pubDatetime: 2024-09-26
 title: Rusty Large Language Models
 postSlug: rusty-llms
 ogImage: /assets/og_images/rusty-llm.png
@@ -14,7 +14,7 @@ description: "In this article, I explore the integration of Large Language Model
 
 The future of Large Language Models (LLMs) is undeniably controversial, but one fact stands clear: they are revolutionizing software development. There's widespread fear that LLMs might replace Software Engineers entirely. While I don't subscribe to the belief that LLMs will take all our jobs, I am convinced that a Software Engineer proficient with LLMs will outshine one who ignores them.
 
-Python reigns supreme among many data scientists, attracting a considerable number of AI/LLM developers into its ecosystem. Yet, while Python is valuable, it isn't the universal best fit for every task or everyone. To venture beyond Python, I’ve developed a [local LLM using TypeScript and Deno](../llamas-and-dinosaurs/llamas-and-dinosaurs), and I've created tools for [Obsidian](https://obsidian.md/) to help [summarize my notes](https://github.com/irbull/obsidian-ai-summary). More recently, I’ve delved into integrating the OpenAI API into Rust-based applications.
+Python reigns supreme among many data scientists, attracting a considerable number of AI/LLM developers into its ecosystem. Yet, while Python is valuable, it isn't the universal best fit for every task or everyone. To venture beyond Python, I’ve developed a [local LLM using TypeScript and Deno](../llamas-and-dinosaurs/), and I've created tools for [Obsidian](https://obsidian.md/) to help [summarize my notes](https://github.com/irbull/obsidian-ai-summary). More recently, I’ve delved into integrating the OpenAI API into Rust-based applications.
 
 Rust stands out as a systems programming language that emphasizes safety, speed, and concurrency. Its unique ownership model prevents common bugs like null pointer dereferencing and buffer overflows, allowing developers to write high-performance code with zero-cost abstractions and extensive compile-time checks. Rust offers a compelling alternative to traditional languages like C and C++.
 
@@ -150,7 +150,7 @@ By merging type-safe templates with JSON schemas generated from Rust code and st
 
 ## Sample Usage
 
-I have pushed the _Commit Evaluation_ tool to GitHub if you'd like to try it. You will need an OpenAI API key, and of course, Rust. You can build it for your system using `cargo build --release` or run it directly with `cargo run`. It must be run from within a current Git repository.
+I have pushed the [_Commit Evaluation_ tool to GitHub](https://github.com/irbull/commit-eval) if you'd like to try it. You will need an OpenAI API key, and of course, Rust. You can build it for your system using `cargo build --release` or run it directly with `cargo run`. It must be run from within a current Git repository.
 
 ![](./commit-eval-2.gif)
 
