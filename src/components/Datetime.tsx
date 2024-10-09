@@ -44,8 +44,6 @@ const FormattedDate = ({ datetime }: { datetime: string | Date }) => {
     month: "long",
     day: "numeric",
   });
-  const dateISO = myDatetime.toISOString().split("T")[0];
-
   return <>{date}</>;
 };
 

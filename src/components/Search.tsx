@@ -3,11 +3,13 @@ import { useEffect, useRef, useState, useMemo } from "react";
 import Card from "@components/Card";
 import slugify from "@utils/slugify";
 import type { BlogFrontmatter } from "@content/_schemas";
+import type { TilFrontmatter } from "@content/_schemas";
 
 export type SearchItem = {
   title: string;
   description: string;
-  data: BlogFrontmatter;
+  data: BlogFrontmatter | TilFrontmatter;
+  type: "posts" | "notes";
 };
 
 interface Props {
@@ -33,7 +35,7 @@ export default function SearchBar({ searchList }: Props) {
   const fuse = useMemo(
     () =>
       new Fuse(searchList, {
-        keys: ["title", "description"],
+        keys: ["title", "description", "type"],
         includeMatches: true,
         minMatchCharLength: 2,
         threshold: 0.5,
@@ -111,7 +113,7 @@ export default function SearchBar({ searchList }: Props) {
         {searchResults &&
           searchResults.map(({ item, refIndex }) => (
             <Card
-              href={`/posts/${slugify(item.data)}`}
+              href={`/${item.type}/${slugify(item.data)}`}
               frontmatter={item.data}
               key={`${refIndex}-${slugify(item.data)}`}
             />

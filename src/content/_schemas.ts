@@ -16,4 +16,16 @@ export const blogSchema = z
   })
   .strict();
 
+export const tilSchema = z
+  .object({
+    pubDatetime: z.date().optional(),
+    title: z.string(),
+    postSlug: z.string().optional(),
+    tags: z.array(z.string()).default(["others"]),
+    description: z.string(),
+    draft: z.boolean().optional(),
+  })
+  .strict();
+
 export type BlogFrontmatter = z.infer<typeof blogSchema>;
+export type TilFrontmatter = z.infer<typeof tilSchema>;

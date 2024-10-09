@@ -1,0 +1,15 @@
+---
+import { SITE } from "@config";
+import Notes from "@layouts/Notes.astro";
+import getSortedNotes from "@utils/getSortedNotes";
+import getPageNumbers from "@utils/getPageNumbers";
+
+import { getCollection } from "astro:content";
+
+const notes = await getCollection("til");
+const sortedPosts = getSortedNotes(notes);
+const totalPages = getPageNumbers(sortedPosts.length);
+const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
+---
+
+<Notes notes={paginatedPosts} pageNum={1} totalPages={totalPages.length} />
