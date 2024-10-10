@@ -25,6 +25,7 @@ export type SocialMedia =
   | "Instagram"
   | "LinkedIn"
   | "Mail"
+  | "Twitter_bird"
   | "Twitter"
   | "Twitch"
   | "YouTube"
