@@ -7,10 +7,13 @@ export const GET: APIRoute = async ({ params }) => {
 };
 
 const postImportResult = await getCollection("blog", ({ data }) => !data.draft);
+const notesImportResult = await getCollection("til");
 const posts = Object.values(postImportResult);
+const notes = Object.values(notesImportResult);
+const pages = [...posts, ...notes];
 
 export function getStaticPaths() {
-  return posts.map(({ data }) => ({
+  return pages.map(({ data }) => ({
     params: { ogTitle: data.title },
   }));
 }
