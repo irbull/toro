@@ -35,4 +35,4 @@ spec:
   concurrencyPolicy: Forbid | Allow | Replace
 ```
 
-Details: [https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#concurrency-policy](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#concurrency-policy)
+Details: [Concurrency-policy](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#concurrency-policy)

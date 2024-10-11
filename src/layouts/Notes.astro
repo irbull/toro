@@ -23,7 +23,7 @@ const next = pageNum < totalPages ? "" : "disabled";
 
 <Layout title={`Notes | ${SITE.title}`}>
   <Header activeNav="notes" />
-  <Main pageTitle="Today I Learned:" pageDesc="">
+  <Main pageTitle="Today I Learned" pageDesc="">
     <ul>
       {
         notes.map(({ data }) => (
