@@ -19,3 +19,5 @@ fn main() {
     println!("{} + 1 = {}", y, add_one(y));
 }
 ```
+
+The second call to `add_one` fails because the type `i32` has been locked into the closure.
