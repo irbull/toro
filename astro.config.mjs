@@ -65,10 +65,7 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  output: 'server',
-  adapter: node({
-    mode: 'standalone',
-  }),
+  output: 'static',
   integrations: [
     tailwind({
       config: {
