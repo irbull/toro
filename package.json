@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro check --watch & astro dev",
     "start": "astro dev",
-    "build": "npm install && astro build",
+    "build": "npm install && astro build && jampack ./dist",
+    "deploy-build": "npm install && astro build",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
