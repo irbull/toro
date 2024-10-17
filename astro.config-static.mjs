@@ -1,4 +1,4 @@
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import remarkToc from "remark-toc";
@@ -8,8 +8,6 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
-import deno from "@deno/astro-adapter";
-import node from "@astrojs/node";
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -66,6 +64,7 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   output: 'static',
+  outDir: './dist/client',
   integrations: [
     tailwind({
       config: {
