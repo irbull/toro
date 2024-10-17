@@ -8,6 +8,7 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
+import node from '@astrojs/node';
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -63,6 +64,10 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
+  output: 'server',
+  adapter: node({
+    mode: 'standalone',
+  }),
   integrations: [
     tailwind({
       config: {
