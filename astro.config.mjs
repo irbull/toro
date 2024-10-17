@@ -9,6 +9,7 @@ import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
 import deno from "@deno/astro-adapter";
+import node from "@astrojs/node";
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -65,7 +66,7 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   output: 'server',
-  adapter: deno({
+  adapter: node({
     mode: 'standalone',
   }),
   integrations: [
