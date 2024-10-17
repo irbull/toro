@@ -8,7 +8,7 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
-import node from '@astrojs/node';
+import node from '@astrojs/deno';
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -65,7 +65,7 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   output: 'server',
-  adapter: node({
+  adapter: deno({
     mode: 'standalone',
   }),
   integrations: [
