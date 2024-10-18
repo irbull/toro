@@ -11,7 +11,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.13",
     "@types/react": "^18.3.11",
-    "astro": "^4.15.10",
+    "astro": "^4.16.6",
     "astro-navbar": "^2.3.2",
     "astro-seo": "^0.8.3",
     "fuse.js": "^7.0.0",
