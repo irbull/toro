@@ -2,7 +2,6 @@
   "tasks": {
     "install": "deno install --allow-scripts",
     "build": "deno install --allow-scripts && astro build --config astro.config.mjs && jampack ./dist/client",
-    "dev": "astro check --watch & astro dev",
     "start": "astro dev",
     "deploy-build": "deno install --allow-scripts && astro build",
     "preview" : "deno run -A dist/server/entry.mjs",

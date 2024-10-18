@@ -146,6 +146,7 @@ const generateOgImage = async (mytext = SITE.title) => {
 
     console.info("Output PNG Image  :", `${mytext}.png`);
 
+    // deno-lint-ignore no-explicit-any
     await writeFile(`./dist/client/${mytext}.png`, pngBuffer as any);
   }
 

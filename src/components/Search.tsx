@@ -115,7 +115,9 @@ export default function SearchBar({ searchList }: Props) {
 
       <ul>
         {searchResults &&
-          searchResults.map(({ item, refIndex } : {item: SearchItem, refIndex: number}) => (
+          searchResults.map((
+            { item, refIndex }: { item: SearchItem; refIndex: number },
+          ) => (
             <Card
               href={`/${item.type}/${slugify(item.data)}`}
               frontmatter={item.data}

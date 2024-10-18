@@ -1,5 +1,4 @@
 ---
-export const prerender = false;
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
@@ -10,22 +9,9 @@ import Card from "../components/Card.tsx";
 import getSortedPosts from "../utils/getSortedPosts.ts";
 import slugify from "../utils/slugify.ts";
 import Hero from "../components/Hero.astro";
-import type { APIRoute } from 'astro';
 
 const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
-
-
-export const GET: APIRoute = () => {
-  const currentTime = new Date().toTimeString();
-  return new Response(currentTime, {
-    headers: {
-      "content-type": "text/plain",
-    },
-  });
-}
-const resp = await GET(Astro);
-const getResult = await resp.text();
 ---
 
 <Layout>
@@ -50,9 +36,7 @@ const getResult = await resp.text();
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
-      <p>
-        I got this from the server: {getResult}.
-      </p>
+      
       <p>
         The following posts document my life as a Software Engineer. I write
         about my experiences, learnings, and thoughts on various topics
