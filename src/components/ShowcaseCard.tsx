@@ -1,4 +1,4 @@
-import type { BlogFrontmatter } from "@content/_schemas";
+import type { BlogFrontmatter } from "../content/_schemas.ts";
 
 export interface Props {
   href?: string;

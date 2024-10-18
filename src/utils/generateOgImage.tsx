@@ -1,5 +1,5 @@
 import satori, { type SatoriOptions } from "satori";
-import { SITE } from "@config";
+import { SITE } from "../config.ts";
 import { writeFile } from "node:fs/promises";
 import { Resvg } from "@resvg/resvg-js";
 
@@ -146,7 +146,7 @@ const generateOgImage = async (mytext = SITE.title) => {
 
     console.info("Output PNG Image  :", `${mytext}.png`);
 
-    await writeFile(`./dist/client/${mytext}.png`, pngBuffer);
+    await writeFile(`./dist/client/${mytext}.png`, pngBuffer as any);
   }
 
   return svg;

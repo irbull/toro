@@ -1,5 +1,5 @@
 import { getCollection } from "astro:content";
-import generateOgImage from "@utils/generateOgImage";
+import generateOgImage from "../utils/generateOgImage.tsx";
 import type { APIRoute } from "astro";
 
 export const GET: APIRoute = async ({ params }) => {

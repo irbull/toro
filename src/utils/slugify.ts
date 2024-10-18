@@ -1,5 +1,5 @@
 import { slug as slugger } from "github-slugger";
-import type { BlogFrontmatter, TilFrontmatter } from "@content/_schemas";
+import type { BlogFrontmatter, TilFrontmatter } from "../content/_schemas.ts";
 
 export const slugifyStr = (str: string) => slugger(str);
 

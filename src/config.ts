@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types";
+import type { Site, SocialObjects } from "./types.ts";
 
 export const SITE: Site = {
   website: "https://ianbull.com/",
