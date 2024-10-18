@@ -1,0 +1,15 @@
+{
+    "tasks": {
+      "build": "deno install --allow-scripts=npm:sharp@0.33.5,npm:@swc/core@1.7.36 && astro build --config astro.config.mjs && jampack ./dist/client",
+      "dev": "astro check --watch & astro dev",
+      "start": "astro dev",
+      "deploy-build": "deno install --allow-scripts=npm:sharp,npm:@swc/core && astro build",
+      "preview": "astro preview",
+      "sync": "astro sync",
+      "astro": "astro",
+      "format:check": "prettier --plugin-search-dir=. --check .",
+      "format": "prettier --plugin-search-dir=. --write .",
+      "cz": "cz",
+      "lint": "eslint ."
+    }
+  }
