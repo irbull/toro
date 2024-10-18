@@ -146,7 +146,7 @@ const generateOgImage = async (mytext = SITE.title) => {
 
     console.info("Output PNG Image  :", `${mytext}.png`);
 
-    await writeFile(`./dist/${mytext}.png`, pngBuffer);
+    await writeFile(`./dist/client/${mytext}.png`, pngBuffer);
   }
 
   return svg;

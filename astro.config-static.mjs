@@ -8,7 +8,6 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
-import deno from "@deno/astro-adapter";
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -64,8 +63,8 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  output: 'hybrid',
-  adapter: deno(),
+  output: 'static',
+  outDir: './dist/client',
   integrations: [
     tailwind({
       config: {
