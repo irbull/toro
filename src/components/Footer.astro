@@ -1,9 +1,7 @@
 ---
-export const prerender = false;
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
-import type { APIRoute } from 'astro';
-
+import ServerTime from "./ServerTime.tsx";
 
 const currentYear = new Date().getFullYear();
 
@@ -13,16 +11,6 @@ export interface Props {
 
 const { noMarginTop = false } = Astro.props;
 
-export const getServerTime: APIRoute = () => {
-  const currentTime = new Date().toISOString();
-  return new Response(currentTime, {
-    headers: {
-      "content-type": "text/plain",
-    },
-  });
-}
-const resp = await getServerTime();
-const serverTime = await resp.text();
 ---
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
@@ -33,7 +21,7 @@ const serverTime = await resp.text();
       <span class="separator">&nbsp;|&nbsp;</span>
       <span>All rights reserved</span>
       <span class="separator">&nbsp;|&nbsp;</span>
-      <span >{serverTime}</span>
+      <ServerTime client:load/>
 
     </div>
   </div>
