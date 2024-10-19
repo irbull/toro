@@ -1,5 +1,5 @@
 import Fuse from "fuse.js";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "preact/hooks";
 import Card from "../components/Card.tsx";
 import slugify from "../utils/slugify.ts";
 import type { BlogFrontmatter, TilFrontmatter } from "../content/_schemas.ts";

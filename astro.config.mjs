@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
@@ -9,6 +8,8 @@ import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
 import deno from "@deno/astro-adapter";
+
+import preact from "@astrojs/preact";
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -66,15 +67,11 @@ export default defineConfig({
   redirects,
   output: 'hybrid',
   adapter: deno(),
-  integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    react(),
-    sitemap(),
-  ],
+  integrations: [tailwind({
+    config: {
+      applyBaseStyles: false,
+    },
+  }), sitemap(), preact()],
   markdown: {
     remarkPlugins: [
       remarkToc,

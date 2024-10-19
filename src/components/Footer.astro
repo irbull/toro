@@ -4,6 +4,7 @@ import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 import type { APIRoute } from 'astro';
 
+
 const currentYear = new Date().getFullYear();
 
 export interface Props {
@@ -13,17 +14,16 @@ export interface Props {
 const { noMarginTop = false } = Astro.props;
 
 export const getServerTime: APIRoute = () => {
-  const currentTime = new Date().toDateString();
+  const currentTime = new Date().toISOString();
   return new Response(currentTime, {
     headers: {
       "content-type": "text/plain",
     },
   });
 }
-const resp = await getServerTime(Astro);
+const resp = await getServerTime();
 const serverTime = await resp.text();
 ---
-
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
   <div class="footer-wrapper">
@@ -33,7 +33,8 @@ const serverTime = await resp.text();
       <span class="separator">&nbsp;|&nbsp;</span>
       <span>All rights reserved</span>
       <span class="separator">&nbsp;|&nbsp;</span>
-      <span>{serverTime}</span>
+      <span >{serverTime}</span>
+
     </div>
   </div>
 </footer>

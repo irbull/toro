@@ -2,7 +2,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/node": "^8.3.4",
-    "@astrojs/react": "^3.6.2",
+    "@astrojs/preact": "^3.5.3",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@astrojs/tailwind": "^5.1.1",
@@ -17,7 +17,7 @@
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
-    "react": "^18.3.1",
+    "preact": "^10.24.3",
     "react-dom": "^18.3.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
