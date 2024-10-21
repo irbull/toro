@@ -1,23 +1,19 @@
-import { useState } from "preact/hooks";
+import { useEffect, useState } from "preact/hooks";
 import type { APIRoute } from "astro";
-
-const getServerTime: APIRoute = () => {
-  const currentTime = new Date().toISOString();
-  return new Response(currentTime, {
-    headers: {
-      "content-type": "text/plain",
-    },
-  });
-};
 
 export default function ServerTime() {
   const [serverTime, setServerTime] = useState("0");
-
-  const getInitialTime = async () => {
-    const resp = await getServerTime();
-    setServerTime(await resp.text());
-  };
-  getInitialTime();
+  useEffect(() => {
+    const getInitialTime = async () => {
+      try {
+        const resp = await fetch("/api/get-time");
+        setServerTime(await resp.text());
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    getInitialTime();
+  }, []);
 
   return <span>{serverTime}</span>;
 }
