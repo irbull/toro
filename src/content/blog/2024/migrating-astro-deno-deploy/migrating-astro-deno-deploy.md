@@ -120,12 +120,8 @@ export default function ServerTime() {
   const [serverTime, setServerTime] = useState("");
   useEffect(() => {
     const getInitialTime = async () => {
-      try {
-        const resp = await fetch("/api/get-time");
-        setServerTime(await resp.text());
-      } catch (e) {
-        console.error(e);
-      }
+	  const resp = await fetch("/api/get-time");
+      setServerTime(await resp.text());
     };
     getInitialTime();
   }, []);
