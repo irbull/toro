@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2024-10-21
-title: Fetch calls in Astro With Relative Routes
+title: Fetch Calls in Astro With Relative Routes
 slug: fetch-calls-astro-effects
 tags:
   - TIL
