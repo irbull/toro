@@ -1,4 +1,6 @@
 ---
+
+export const prerender = false;
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import Posts from "../../layouts/Posts.astro";
@@ -44,6 +46,7 @@ const lastPost = currentPage * SITE.postPerPage;
 const startPost = lastPost - SITE.postPerPage;
 
 const paginatedPosts = sortedPosts.slice(startPost, lastPost);
+
 ---
 
 {
