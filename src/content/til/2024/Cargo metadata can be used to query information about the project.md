@@ -11,5 +11,5 @@ description: "Today I learned how to extract a package's version from a Rust pro
 The `cargo metadata` command returns the metadata for the project in JSON form. Using `jq` you can easily extract the details. The following command extracts the version of a package in the project.
 
 ```sh
-cargo metadata --format-version 1 | jq '.packages | map(select(.name == <"crate-name">)) | .[0].version'
+cargo metadata --format-version 1 | jq '.packages | map(select(.name == <"package-name">)) | .[0].version'
 ```
