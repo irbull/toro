@@ -11,7 +11,7 @@ description: "Carnarvon Fastball celebrated a successful season with impressive 
 
 ![Carnarvon Logo](./carnarvonfastball2.jpeg)
 
-Carnarvon Fastball had another successful year both on and off the field. Five of our teams were classified as LTP, and the other five teams played in tournaments across the South and Mid Island. From those five teams, Carnarvon earned medals in three championships: Our U13 team finished 3rd (Bronze) at the Regional (Island) championships. Our U11C team won a silver medal in the black pool at the Celebration of Softball, and the U11B team won the gold medal at the SVI District Championship.
+[Carnarvon Fastball](https://carnarvon.ca/fastball/) had another successful year both on and off the field. Five of our teams were classified as LTP, and the other five teams played in tournaments across the South and Mid Island. From those five teams, Carnarvon earned medals in three championships: Our U13 team finished 3rd (Bronze) at the Regional (Island) championships. Our U11C team won a silver medal in the black pool at the Celebration of Softball, and the U11B team won the gold medal at the SVI District Championship.
 
 Our registration numbers were up this year with 104 players.
 
