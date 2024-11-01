@@ -51,6 +51,12 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
+    name: "Bluesky",
+    href: "https://bsky.app/profile/irbull.bsky.social",
+    linkTitle: `${SITE.title} on Bluesky`,
+    active: true,
+  },
+  {
     name: "Twitter",
     href: "https://twitter.com/irbull",
     linkTitle: `${SITE.title} on Twitter`,
