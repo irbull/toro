@@ -1,9 +1,7 @@
 ---
-author: Ian Bull
 pubDatetime: 2024-10-31
 title: Mono Repos with pnpm
-postSlug: pnpm-mono-repo 
-featured: false
+slug: pnpm-mono-repo 
 tags:
  - npm
  - pnpm
