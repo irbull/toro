@@ -9,7 +9,7 @@ tags:
 description: "In this article, I explore the differences between stubs, mocks, and spies in testing frameworks, highlighting their unique roles in ensuring effective code verification."
 ---
 
-Earlier today there was a short conversation in one of my Discord channels about how _stubs_ are used in testing frameworks. You’ll often hear about _stubs_, _mocks_, and _spies_—each serving a unique role in your code’s verification process. Here's a quick breakdown:
+Earlier today there was a short conversation in one of my Discord channels about how _stubs_ are used in testing frameworks. You’ll often hear about _stubs_, _mocks_, and _spies_—each serving a unique role in your tests. Here's a quick breakdown:
 
 ### Stubs
 
@@ -21,7 +21,7 @@ Mocks are more demanding. They let you set _expectations_ on how your code inter
 
 ### Spies
 
-Spies are like the secret agents of test doubles. They _observe_ and record how your methods are used, without requiring strict expectations upfront. Want to let a method run but still verify interactions afterward? Spies let you do just that. They're perfect for keeping an eye on things while staying flexible.
+Spies are like the secret agents of test doubles. They _observe_ and record how your methods are used, without requiring strict expectations upfront. Want to let a method run but still verify interactions afterward? Spies let you do just that. They're perfect for keeping an eye on things while staying flexible in your test code.
 
 ### TL;DR
 
