@@ -9,7 +9,7 @@ tags:
 description: "In this article, I explore the differences between stubs, mocks, and spies in testing frameworks, highlighting their unique roles in ensuring effective code verification."
 ---
 
-Today, there was a short conversation in one of my Discord channels about how _stubs_ are used in testing frameworks. You’ll often hear about _stubs_, _mocks_, and _spies_—each serving a unique role in your code’s verification process. Here's a quick breakdown:
+Earlier today there was a short conversation in one of my Discord channels about how _stubs_ are used in testing frameworks. You’ll often hear about _stubs_, _mocks_, and _spies_—each serving a unique role in your code’s verification process. Here's a quick breakdown:
 
 ### Stubs
 
