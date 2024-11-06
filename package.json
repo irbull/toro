@@ -6,7 +6,7 @@
     "@astrojs/rss": "4.0.9",
     "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "5.1.2",
-    "@deno/astro-adapter": "^0.1.4",
+    "@deno/astro-adapter": "^0.1.5",
     "@divriots/jampack": "^0.24.0",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.13",
