@@ -3,7 +3,7 @@
     "install": "deno install --allow-scripts",
     "build": "deno install --allow-scripts && astro build --config astro.config.mjs && jampack ./dist/client",
     "start": "astro dev",
-    "deploy-build": "deno install --allow-scripts && astro build",
+    "deploy-build": "deno install -r --allow-scripts=npm:sharp@0.33.5,npm:@swc/core@1.9.1  && astro build",
     "preview" : "deno run -A dist/server/entry.mjs",
     "check" : "deno lint src/ && deno fmt src/ --check"
   },
