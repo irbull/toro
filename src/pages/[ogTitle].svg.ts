@@ -8,9 +8,13 @@ export const GET: APIRoute = async ({ params }) => {
 
 const postImportResult = await getCollection("blog", ({ data }) => !data.draft);
 const notesImportResult = await getCollection("til");
+const recipesImportResult = await getCollection("recipes");
+
 const posts = Object.values(postImportResult);
 const notes = Object.values(notesImportResult);
-const pages = [...posts, ...notes];
+const recipes = Object.values(recipesImportResult);
+
+const pages = [...posts, ...notes, ...recipes];
 
 export function getStaticPaths() {
   return pages.map(({ data }) => ({
