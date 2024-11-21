@@ -95,6 +95,14 @@ const { activeNav } = Astro.props;
               </a>
             </li>
             <li>
+              <a
+                href="/recipes"
+                class={activeNav === "recipes" ? "active" : ""}
+              >
+                Recipes
+              </a>
+            </li>
+            <li>
               <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
                 Tags
               </a>
@@ -174,7 +182,7 @@ const { activeNav } = Astro.props;
     @apply flex w-full flex-col items-center bg-skin-fill md:ml-2 md:flex-row md:justify-end md:space-x-4 md:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 md:ml-0 md:mt-0 md:flex md:w-auto md:gap-x-5 md:gap-y-0;
+    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 md:ml-0 md:mt-0 md:flex md:w-auto md:gap-x-4 md:gap-y-0;
   }
   nav ul li {
     @apply col-span-2 flex items-center justify-center;
@@ -182,11 +190,11 @@ const { activeNav } = Astro.props;
   nav ul li a {
     @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent md:my-0 md:px-1 md:py-1;
   }
-  nav ul li:nth-child(6) a {
+  nav ul li:nth-child(7) a {
     @apply w-auto;
   }
-  nav ul li:nth-child(6),
-  nav ul li:nth-child(7) {
+  nav ul li:nth-child(7),
+  nav ul li:nth-child(8) {
     @apply col-span-1;
   }
   nav a.active {
