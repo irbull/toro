@@ -52,7 +52,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Bluesky",
-    href: "https://bsky.app/profile/irbull.bsky.social",
+    href: "https://bsky.app/profile/ianbull.com",
     linkTitle: `${SITE.title} on Bluesky`,
     active: true,
   },
