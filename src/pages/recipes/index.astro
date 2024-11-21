@@ -1,0 +1,15 @@
+---
+import { SITE } from "../../config.ts";
+import Recipes from "../../layouts/Recipes.astro";
+import getSortedRecipes from "../../utils/getSortedRecipes.ts";
+import getPageNumbers from "../../utils/getPageNumbers.ts";
+
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("recipes");
+const sortedPosts = getSortedRecipes(posts);
+const totalPages = getPageNumbers(sortedPosts.length);
+const paginatedPosts = sortedPosts.slice(0, SITE.postPerPage);
+---
+
+<Recipes recipes={paginatedPosts} pageNum={1} totalPages={totalPages.length} />

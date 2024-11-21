@@ -27,5 +27,22 @@ export const tilSchema = z
   })
   .strict();
 
+export const recipeSchema = z
+  .object({
+    author: z.string().optional(),
+    pubDatetime: z.date().optional(),
+    title: z.string(),
+    postSlug: z.string().optional(),
+    featured: z.boolean().optional(),
+    draft: z.boolean().optional(),
+    tags: z.array(z.string()).default(["others"]),
+    ogImage: z.string().nullable().optional(),
+    description: z.string(),
+    icon: z.string().optional(),
+    project: z.boolean().optional(),
+  })
+  .strict();
+
 export type BlogFrontmatter = z.infer<typeof blogSchema>;
 export type TilFrontmatter = z.infer<typeof tilSchema>;
+export type RecipeFrontmatter = z.infer<typeof recipeSchema>;
