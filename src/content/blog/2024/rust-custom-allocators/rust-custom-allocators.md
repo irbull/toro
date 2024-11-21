@@ -133,16 +133,21 @@ If you want to use the bump allocator for the entire program, you can declare it
 ```rust
 #![feature(allocator_api)]
 
+/// Set the global allocator.
 #[global_allocator]
-static ALLOCATOR: BumpAllocator = BumpAllocator::new();
+static GLOBAL_ALLOCATOR: SimpleBumpAllocator = SimpleBumpAllocator;
 
 fn main() {
-    let v = vec![1, 2, 3, 4]; // Allocates from the bump allocator
+    let v = vec![1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Allocates from the bump allocator
     println!("{:?}", v);
+    let total_memory_allocated = OFFSET.load(Ordering::Relaxed);
+    println!("Total memory allocated: {} bytes", total_memory_allocated);
 }
 ```
 
 By declaring the allocator globally, all allocations in your program—such as `Vec`, `Box`, or `String`—will use the bump allocator. There are lots of challenges to consider when using a bump allocator globally, such as fragmentation and memory leaks. Also, you cannot allocate memory during `alloc`, which makes debugging harder.
+
+The full code for this allocator is available on [GitHub](https://github.com/irbull/custom_allocators/blob/main/examples/global_allocator.rs).
 
 ### Using Bumpalo for Efficient Bump Allocations
 
