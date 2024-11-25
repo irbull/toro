@@ -142,9 +142,9 @@ You can enable Clippy in your CI Pipelines to catch errors _early and often_.
 
 Idiomatic Rust isn’t just about making your code look nice. It’s about writing code that:
 
-- **Plays well with others:** Other Rust developers can understand and maintain it.
-- **Performs better:** Rust’s features are designed for safety and speed—leaning into them gets you both.
-- **Feels satisfying:** When your code clicks with the language, it’s just fun to write.
+- **Plays well with others:** Other Rust developers can understand and maintain it. Most Rust code _looks the same_, which makes it very easy to dive into someone else's library.
+- **Performs better:** Rust’s features are designed for safety and speed—leaning into them gets you both. The Rust compiler can often optimize idiomatic code (such as iterators) very well. Stick to the patterns that work!
+- **Feels satisfying:** When your code clicks with the language, it’s just fun to write. While this is certainly subjective, I find Rust code less monotonous to write. As someone once told me, it's almost like solving a bunch of little puzzles.
 
 It’s also about learning to trust Rust. The language gives you powerful tools—ownership, pattern matching, iterators, and more. Writing idiomatic code means using those tools to their full potential.
 
