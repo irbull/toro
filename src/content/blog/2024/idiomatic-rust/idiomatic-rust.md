@@ -1,7 +1,7 @@
 ---
 author: Ian Bull
 pubDatetime: 2024-11-25
-title: "What Does Idiomatic Rust Really Mean?"
+title: "What Does Idiomatic Rust Really Mean"
 postSlug: idiomatic-rust
 
 featured: false
