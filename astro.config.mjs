@@ -65,7 +65,6 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  output: 'hybrid',
   adapter: deno(),
   integrations: [tailwind({
     config: {

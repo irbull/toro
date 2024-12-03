@@ -18,6 +18,6 @@ const pages = [...posts, ...notes, ...recipes];
 
 export function getStaticPaths() {
   return pages.map(({ data }) => ({
-    params: { ogTitle: data.title },
+    params: { ogTitle: data.title || "ianbull . com" },
   }));
 }
