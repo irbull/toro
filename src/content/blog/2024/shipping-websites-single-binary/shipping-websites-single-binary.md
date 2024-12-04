@@ -55,7 +55,7 @@ To compile the Fresh site, use:
 
 `deno compile --include static --include _fresh --include deno.json -A main.ts`
 
-## Compiled the Entire Fresh Site
+## Compile the Entire Fresh Site
 
 Finally, I decided to try _compiling_ the entire Deno Fresh website. I cloned the [Git Repository](https://github.com/denoland/fresh) and executed the following three commands:
 
