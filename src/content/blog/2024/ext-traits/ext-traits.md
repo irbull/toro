@@ -12,9 +12,7 @@ description: "In this article, I delve into how to extend Rust's stream function
 
 While building a Rust server to serve Astro sites, I ran into something called `StreamTrait.` I had no idea what this was, or how to work with it. I hacked together a few examples and got it working, but I wanted to understand _how_ it worked.
 
-Like most developers, I talked with a colleague at work, Googled my way forward and eventually fell into the world of `Ext` traits and `Future`s. At first, it felt like over-engineering—more tools on top of tools—but then it clicked.
-
-In this post, I’ll share what I learned, focusing on how to extend Rust’s streams using `Ext` traits. We’ll implement a `next` method that integrates neatly with the `Future` trait, and I’ll include a clear, practical example. If you’ve ever looked at a trait and thought, _I know this is important, but I don’t know why,_ this might help. Let’s dig in.
+I decided to try and build my own _Ext_ trait. I implemented the `next`, `take`, and `map` methods, and integrated them with the `Future` trait.
 
 ## What Are `Ext` Traits?
 
