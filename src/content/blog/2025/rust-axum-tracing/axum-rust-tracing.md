@@ -10,7 +10,7 @@ tags:
 description: "In this article, I demonstrate how to build a simple Axum-based REST API in Rust and leverage the `tracing` crate for enhanced logging and diagnostics."
 ---
 
-In any real-world application, logging is crucial for diagnosing problems and understanding application behavior. Rust offers several powerful crates for logging (`[log](https://crates.io/crates/log)`) and structured tracing (`[tracing](https://crates.io/crates/tracing)`). In this post, we’ll build a simple Axum-based REST API and show how to use `tracing` to automatically include context—like HTTP method and path—in our logs.
+In any real-world application, logging is crucial for diagnosing problems and understanding application behavior. Rust offers several powerful crates for logging ([`log`](https://crates.io/crates/log)) and structured tracing ([`tracing`](https://crates.io/crates/tracing)). In this post, we’ll build a simple Axum-based REST API and show how to use `tracing` to automatically include context—like HTTP method and path—in our logs.
 
 We’ll also delve into the variety of log levels, how to set different log levels per crate, and why structured logs are so beneficial for observability.
 
