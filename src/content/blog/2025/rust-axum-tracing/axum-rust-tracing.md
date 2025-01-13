@@ -209,7 +209,7 @@ This flexible filtering is a major advantage because you can enable or disable l
 
     You’ll see lines like:
 
-    ```
+    ```bash
     INFO  request{method=GET uri=/messages ...}: axum_tracing_example: Handling list_messages request
     INFO  request{method=POST uri=/messages ...}: axum_tracing_example: Handling create_message request
     ```
