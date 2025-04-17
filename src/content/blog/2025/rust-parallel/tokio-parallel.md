@@ -1,7 +1,7 @@
 ---
 author: "Ian Bull"
 pubDatetime: 2025-04-16
-title: "Tokio - A Deep Dive into Concurrency Vs. Parallelism"
+title: "Tokio A Deep Dive into Concurrency Vs. Parallelism"
 postSlug: tokio-parallel
 featured: false
 tags:
@@ -58,10 +58,12 @@ Here, each task does nothing but wait. Because `sleep().await` yields, **all 100
 
 This one looks innocent with no explicit `tokio::spawn` or `spawn_blocking`, but it’s a trap. Because there's **no** `.await` inside those closures, each future’s entire work runs **inline** on the executor thread the moment it’s polled. They execute one after the other:
 
+```bash
     Starting Task-1
     // sum_one_to_billion runs to completion, blocking the thread
     Starting Task-2
     // sum_one_to_billion again...
+```
 
 You get neither concurrency nor parallelism: just sequential, blocking CPU work on a single core. Don’t do this.
 
