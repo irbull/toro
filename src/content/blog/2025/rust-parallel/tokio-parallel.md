@@ -1,7 +1,7 @@
 ---
 author: "Ian Bull"
 pubDatetime: 2025-04-16
-title: "Tokio: A Deep Dive into Concurrency Vs. Parallelism"
+title: "Tokio - A Deep Dive into Concurrency Vs. Parallelism"
 postSlug: tokio-parallel
 featured: false
 tags:
