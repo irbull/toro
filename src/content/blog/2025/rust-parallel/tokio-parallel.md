@@ -73,7 +73,7 @@ You get neither concurrency nor parallelism: just sequential, blocking CPU work 
 ## 3. Spawning Your Way to “Parallel”
 
 ```rust
-    // Example 2: spawn + async block with CPU work
+    // Example 3: spawn + async block with CPU work
     #[tokio::main(flavor = "multi_thread", worker_threads = 8)]
     async fn main() {
         let handles = (1..=100).map(|i| {
@@ -97,7 +97,7 @@ But beware: these eight threads also handle **all** your async I/O. If you hog t
 ## 4. The Blocking Pool Savior
 
 ```rust
-    // Example 3: spawn_blocking for true isolation
+    // Example 4: spawn_blocking for true isolation
     #[tokio::main(flavor = "multi_thread", worker_threads = 8)]
     async fn main() {
         let handles = (1..=100).map(|i| {
