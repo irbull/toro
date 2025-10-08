@@ -16,7 +16,7 @@
     "npm:@astrojs/rss@4.0.12": "4.0.12",
     "npm:@astrojs/sitemap@3.6.0": "3.6.0",
     "npm:@astrojs/tailwind@6.0.2": "6.0.2_astro@5.14.1__vite@6.3.6___picomatch@4.0.3__zod@3.25.76_tailwindcss@3.4.18__postcss@8.5.6_postcss@8.5.6",
-    "npm:@deno/astro-adapter@~0.3.2": "0.3.2_astro@5.14.1__vite@6.3.6___picomatch@4.0.3__zod@3.25.76",
+    "npm:@deno/astro-adapter@0.2": "0.2.1_astro@5.13.5__vite@6.3.5___picomatch@4.0.2__zod@3.25.76",
     "npm:@divriots/jampack@0.24": "0.24.4_react-dom@18.3.1__react@18.3.1",
     "npm:@resvg/resvg-js@^2.6.2": "2.6.2",
     "npm:@tailwindcss/typography@~0.5.13": "0.5.19_tailwindcss@3.4.18__postcss@8.5.6",
@@ -386,8 +386,8 @@
         "fontkit"
       ]
     },
-    "@deno/astro-adapter@0.3.2_astro@5.14.1__vite@6.3.6___picomatch@4.0.3__zod@3.25.76": {
-      "integrity": "sha512-nN0kQGobRs2XE3R+O/DWYQanEWpteJNsIf5TD65787qFEw2CrqkFNcNolZFJiKUF/2Y/TKyOLRjMS3F6auECVg==",
+    "@deno/astro-adapter@0.2.1_astro@5.13.5__vite@6.3.5___picomatch@4.0.2__zod@3.25.76": {
+      "integrity": "sha512-DI7HyGZj6dCGDjsVS2F0ldOSXWoEiqxlaEsriHvIwV05d8Zy+3qK/7EhEpLIWtuNEtSC+2c2HKTUDGH/vgavDw==",
       "dependencies": [
         "astro"
       ]
