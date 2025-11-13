@@ -8,10 +8,12 @@ tags:
  - j2v8
  - android
  - v8
-description: "I spent two weeks modernizing J2V8 by updating its V8 engine, migrating the entire build system to current tooling, fixing cross-platform and Android linking issues, and adding full multi-architecture support to bring the project up to 2025 standards."
+description: "I spent two weeks modernizing J2V8 by updating its V8 engine, migrating the entire build system to current tooling, fixing cross-platform and Android linking issues, and adding full multi-architecture support to ensure compatibility with newer Android devices that now require 16K page sizes."
 ---
 
 Over the past two weeks I tackled a long-overdue project: bringing [J2V8](https://github.com/eclipsesource/j2v8), a Java/JNI bridge to Google’s V8 JavaScript engine, into 2025. What began as “let me update V8” very quickly turned into an archaeological dig through build tools, Docker images, NDK revisions, Python 2 fossils, cross-compilation hacks, missing symbols, Android bugs, and a decade of platform drift.
+
+One of the main drivers for this work was a new platform reality: **modern Android devices now ship with 16KB memory pages**, and native libraries built for the legacy 4KB page size simply won’t load. J2V8’s existing binaries were fundamentally incompatible with new hardware. Supporting the newer V8, updated NDKs, and modern tooling was the only sustainable path forward.
 
 This post is a summary of that work: what changed, why it was necessary, and what future maintainers might want to know before venturing into the J2V8 build system.
 
@@ -25,8 +27,12 @@ J2V8 is used in JVM-based environments where developers want a lightweight, embe
 - Gradle 3.5 (2016)
 - Android NDK r18 (2018)
 - A Debian Jessie build image (2015!)
-- Old V8 APIs, missing symbols, and increasingly brittle cross-platform builds
-- Lack of support for modern hardware (Apple Silicon, arm64-v8a, macOS aarch64, etc.)
+- Old V8 APIs and brittle cross-compilation logic
+- Missing support for Apple Silicon, macOS ARM, and Android arm64-v8a
+- And most importantly: **Android’s transition to 16KB page sizes meant older native builds would no longer load**
+
+If you tried running the previous J2V8 binaries on a 2025 Android device?
+They simply failed with `dlopen` errors because the ELF sections were built assuming 4K pages.
 
 After years of minor patches, it was time to modernize the stack.
 
@@ -78,14 +84,20 @@ Apple Silicon required explicit architecture selection and matching:
 
 This was essential to build J2V8 natively on Apple hardware.
 
-### **Android: arm64-v8a Support**
+### **Android: arm64-v8a and 16K Page Size Compatibility**
 
-J2V8’s Android support only targeted `armeabi-v7a`. Modern devices overwhelmingly run 64-bit:
+This is where the most impactful change happened.
 
-- Added `arm64-v8a` via Gradle and NDK configs
-- Updated ABI filters
-- Improved library loading paths
-- Cleaned up platform detection logic
+Modern Android devices—especially those shipped with Android 14+—use **16KB memory pages** at the kernel level. Native libraries built for 4KB-page ELF alignment will not load on these devices.
+
+To fix this:
+
+- Upgraded to NDK r26d, which supports building 16KB-aligned ELF sections
+- Updated all ABIs and Application.mk settings
+- Modernized Gradle and build scripts so the correct ABI filters are applied
+- Ensured V8 is built with the correct page-size assumptions
+
+This is the single biggest end-user compatibility improvement in the entire effort.
 
 ---
 
@@ -208,4 +220,11 @@ For now, though, J2V8 is alive again, with a clean, modern build toolchain.
 
 This work was deep, unglamorous infrastructure engineering: updating compilers, patching toolchains, fixing missing symbols, modernizing scripts, and making cross-platform builds actually work.
 
-But the result is a significantly healthier foundation for anyone embedding V8 through Java.
+But the result is a **much healthier, future-proof J2V8** that now works cleanly on:
+
+- Modern Android devices (16K pages)
+- macOS ARM
+- Linux
+- Multi-ABI Android builds
+
+If you're integrating Java and JavaScript in performance-sensitive environments, J2V8 remains a powerful tool and now it’s ready for 2025.
