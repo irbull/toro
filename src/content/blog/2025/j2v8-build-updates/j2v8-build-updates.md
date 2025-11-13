@@ -1,7 +1,7 @@
 ---
 author: "Ian Bull"
 pubDatetime: 2025-11-12
-title: Modernizing J2V8 - Two Weeks of Technical Debt, Tooling Upgrades, and Cross-Platform Chaos
+title: Modernizing J2V8 - Technical Debt, Tooling Upgrades, and Cross-Platform Chaos
 postSlug: j2v8-build-updates
 featured: false
 tags:
