@@ -11,7 +11,7 @@ tags:
 description: "I spent two weeks modernizing J2V8 by updating its V8 engine, migrating the entire build system to current tooling, fixing cross-platform and Android linking issues, and adding full multi-architecture support to bring the project up to 2025 standards."
 ---
 
-Over the past two weeks I tackled a long-overdue project: bringing [J2V8](https://github.com/eclipsesource/j2v8), a Java/JNI bridge to Google’s V8 JavaScript engine, into 2025. What began as “let me update V8” very quickly turned into an archaeological dig through build tools, Docker images, NDK revisions, Python 2 fossils, cross-compilation hacks, missing symbols, Android bugs, and multiple decades of platform drift.
+Over the past two weeks I tackled a long-overdue project: bringing [J2V8](https://github.com/eclipsesource/j2v8), a Java/JNI bridge to Google’s V8 JavaScript engine, into 2025. What began as “let me update V8” very quickly turned into an archaeological dig through build tools, Docker images, NDK revisions, Python 2 fossils, cross-compilation hacks, missing symbols, Android bugs, and a decade of platform drift.
 
 This post is a summary of that work: what changed, why it was necessary, and what future maintainers might want to know before venturing into the J2V8 build system.
 
