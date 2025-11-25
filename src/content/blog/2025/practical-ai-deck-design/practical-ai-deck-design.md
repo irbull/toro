@@ -95,7 +95,7 @@ Fast-forward through lumber deliveries, weekends with tools, and a lot of “mea
 
 Here’s the current real-world result:
 ![current](./current.jpg)
-
+![current](./current-2.jpg)
 It’s not completely finished yet, but it’s undeniably the same _idea_ we first saw in the render.  And that’s the magic of practical AI: it helps you see the destination early, so you can walk toward it more confidently.
 
 ---
