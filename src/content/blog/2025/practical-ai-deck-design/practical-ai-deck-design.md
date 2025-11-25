@@ -83,6 +83,7 @@ AI couldn’t tell me how to make the deck safe.  It couldn’t size joists or b
 The AI render wasn’t a blueprint.  It was the _vision_, not the _plan_.
 
 But having that vision made the rest dramatically easier.
+![building](./building.png)
 ![building](./building-1.jpg)
 ![](./building-2.jpg)
 
