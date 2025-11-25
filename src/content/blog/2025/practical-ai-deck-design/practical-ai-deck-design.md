@@ -12,9 +12,17 @@ tags:
 description: "In this article, I share how I used AI tools to transform my backyard deck project from a vague vision into a tangible reality."
 ---
 
-Most AI stories these days are about launching startups, generating code, or doing something abstract on a screen.  _This one isn’t._
+Most of my work with AI happens in the _expected_ places — writing code, reviewing pull requests, experimenting with language models, or building developer tools. It’s part of my everyday toolkit.
 
-This is the story of how I used very _practical_, very _hands-on_ AI to design and build a real, physical thing in my backyard: a deck, stairs, pergola, and hot tub area; using a mix of AI visualizers, old-school engineering drawings, and a lot of sawdust. And the result wasn’t theoretical. It’s sitting in my yard right now.
+But this project was different.
+
+This time, I used AI not for work, but for something _tangible_ — designing and building a deck in my backyard.
+
+What started as a bare patch of grass turned into a hands-on experiment in **practical AI** — using tools like Midjourney and Gemini not to generate code or content, but to help imagine, communicate, and refine a real-world design.
+
+And unlike most AI projects, this one didn’t live in a repo or a demo.
+
+It lives in my yard.
 
 ---
 
@@ -75,6 +83,8 @@ AI couldn’t tell me how to make the deck safe.  It couldn’t size joists or b
 The AI render wasn’t a blueprint.  It was the _vision_, not the _plan_.
 
 But having that vision made the rest dramatically easier.
+![building](./building-1.jpg)
+![](./building-2.jpg)
 
 ---
 
@@ -83,7 +93,7 @@ But having that vision made the rest dramatically easier.
 Fast-forward through lumber deliveries, weekends with tools, and a lot of “measure twice, cut once”…  (I cut once, then cut again, then cut a third time—AI didn’t fix that.)
 
 Here’s the current real-world result:
-
+![current](./current.jpg)
 
 It’s not completely finished yet, but it’s undeniably the same _idea_ we first saw in the render.  And that’s the magic of practical AI: it helps you see the destination early, so you can walk toward it more confidently.
 
