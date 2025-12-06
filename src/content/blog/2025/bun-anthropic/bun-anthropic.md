@@ -244,7 +244,6 @@ A clear boundary is beginning to emerge.
 
 - Interacting with external systems
 - Operations that affect real data
-- Authenticated access to services
 - Long-running or heavyweight tasks
 - Workflows that must be auditable and deterministic
 - Systems used by multiple teams
