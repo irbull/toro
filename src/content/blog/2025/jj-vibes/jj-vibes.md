@@ -22,7 +22,7 @@ This post outlines what that workflow looks like, why it works, and where it mig
 
 ## A brief introduction to Jujutsu
 
-[Jujutsu](https://www.jj-vcs.dev/latest/), usually written as `jj`, is a modern distributed version control system that is fully compatible with Git. It stores data in a regular Git repository, so you can keep using existing remotes, GitHub, and CI pipelines while experimenting with a [different front end for your day to day work] (https://github.com/jj-vcs/jj).
+[Jujutsu](https://www.jj-vcs.dev/latest/), usually written as `jj`, is a modern distributed version control system that is fully compatible with Git. It stores data in a regular Git repository, so you can keep using existing remotes, GitHub, and CI pipelines while experimenting with a [different front end for your day to day work](https://github.com/jj-vcs/jj).
 
 The project was started by [Martin von Zweigbergk around 2019](https://lwn.net/Articles/958468/), with the goal of building a simpler, more ergonomic alternative to Git that still respects the same underlying data model. It is written in Rust and released under the Apache 2.0 license.  The official documentation describes it [simply as a version control system that helps you track changes and publish them, and that is designed to be easy to use for both small solo projects and large codebases](https://docs.jj-vcs.dev/latest/).
 
