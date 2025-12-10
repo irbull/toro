@@ -34,7 +34,9 @@ Jujutsu is intentionally Git friendly rather than Git hostile. Mozilla, for exam
 
 Jujutsu becomes even more powerful in an AI workflow when combined with a simple convention for capturing intent during development. I maintain an `AGENTS.md` file with this instruction:
 
-`After applying each change, create a file called INTENTS-[YYYY-MM-DD-HH-mm].md that includes the prompt used to make this change.`
+```bash
+After applying each change, create a file called INTENTS-[YYYY-MM-DD-HH-mm].md that includes the prompt used to make this change.
+```
 
 Because Jujutsu auto stages new files, each in-progress change automatically includes a small `INTENTS` file that records the exact prompt that produced it. This creates a lightweight, local, development time “intent buffer” that attaches the reasoning directly to the change.
 
