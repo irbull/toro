@@ -11,8 +11,8 @@ tags:
 description: "A practical AI native development workflow that uses Jujutsu, temporary intent files, and structured planning to keep AI generated code fast, controlled, and meaningfully organized."
 ---
 
-AI-assisted development is becoming mainstream, but most workflows still treat AI like a fancy autocomplete.  
-The missing piece is a version control model that can keep up with the speed, the non determinism, and the exploratory nature of coding with LLMs.
+![Jujutsu VCS](./jj_vibes.png)
+AI-assisted development is becoming mainstream, but most workflows still treat AI like a fancy autocomplete.  The missing piece is a version control model that can keep up with the speed, the non determinism, and the exploratory nature of coding with LLMs.
 
 Traditional Git workflows were not designed for this.  [Jujutsu](https://github.com/jj-vcs/jj), with its flexible history model, cheap branching, and rewrite friendly design, turns out to be an ideal foundation for an AI native software workflow.
 
