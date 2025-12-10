@@ -149,18 +149,15 @@ Templates could capture the plan step number, the prompt used, and the model inv
 
 Dedicated JJ commits could mark the beginning of an AI assisted session so the entire conversation is contextualized in history.
 
-We seem to be moving toward a pattern where the LLM handles reasoning and patch generation, and Jujutsu handles state, structure, and narrative.  
-If that is true, version control becomes a long term memory substrate for AI assisted development.
+We seem to be moving toward a pattern where the LLM handles reasoning and patch generation, and Jujutsu handles state, structure, and narrative.  If that is true, version control becomes a long term memory substrate for AI assisted development.
 
 ---
 
 ## Conclusion
 
-AI assisted development needs more than a powerful model.  
-It needs a workflow that can reflect the reasoning process and preserve the structure of the work.
+AI assisted development needs more than a powerful model. It needs a workflow that can reflect the reasoning process and preserve the structure of the work.
 
-Jujutsu is a surprisingly strong companion for this.  
-It is flexible, rewrite friendly, experimentation friendly, and well suited to the way humans and LLMs collaborate.
+Jujutsu is a surprisingly strong companion for this. It is flexible, rewrite friendly, experimentation friendly, and well suited to the way humans and LLMs collaborate.
 
 This is still early exploration, but the combination of AI driven reasoning and Jujutsu driven history feels like a glimpse into a future where software development is AI native by design.
 
