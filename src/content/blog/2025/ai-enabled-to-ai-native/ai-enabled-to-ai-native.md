@@ -45,7 +45,7 @@ That detail changes everything.
 
 ## Why 2025 Was the Last “Normal” Year
 
-[Humans are terrible at intuiting super-exponential growth](https://www.youtube.com/watch?v=X_EJi6yCuTM).
+Humans are terrible at intuiting [super-exponential growth](https://www.youtube.com/watch?v=X_EJi6yCuTM).
 
 A jump from five minutes to ten minutes feels trivial. From one hour to two hours still feels manageable. But once systems reliably operate for multiple hours, the implications compound extremely fast.
 
@@ -167,11 +167,9 @@ An agent connected to a stream can re-evaluate, adapt, escalate, and recover as 
 
 ---
 
-## This Is Where the Power Law Appears
+## Unevenly Distributed Outcomes
 
 Super-exponential systems don’t produce evenly distributed outcomes.
-
-They produce **power laws**.
 
 In a normal world, productivity differences cluster around the average. A few outliers exist, but they don’t dominate.
 
@@ -189,11 +187,7 @@ Not because they work harder.
 Not because they have more resources.  
 But because they learned how to manage agent systems earlier.
 
-Everyone else will still be busy—just against a flat curve.
-
-This will feel unfair. It will feel sudden. And it will be tempting to deny it.
-
-But power laws don’t wait for consensus.
+Everyone else will still be busy—just against a flat curve. This will feel unfair. It will feel sudden. And it will be tempting to deny it. But power laws don’t wait for consensus.
 
 ---
 
@@ -238,22 +232,11 @@ This shift is not waiting for permission.
 
 By the end of 2026, many people will be managing small armies of agents—connected to real-time streams, continuously producing work, and compounding outcomes.
 
-Some will look shockingly productive.
+Some will look shockingly productive. Not because they are superhuman; but because they learned how to **let go**. They stopped measuring their value by tasks completed or tickets closed, and started measuring it by outcomes owned, judgment applied, and systems shaped.
 
-Not because they are superhuman.  
-But because they learned how to **let go**.
+The hardest part of this transition is not technical. It’s psychological.
 
-They stopped measuring their value by tasks completed or tickets closed, and started measuring it by outcomes owned, judgment applied, and systems shaped.
-
-The hardest part of this transition is not technical.
-
-It’s psychological.
-
-You will have to stop doing work that makes you feel busy but not effective. You will have to trust systems you don’t fully control while still taking responsibility for the results. You will have to shift from executor to designer.
-
-That discomfort is the signal.
-
-So the real question of 2026 isn’t whether AI will change your work.
+You will have to stop doing work that makes you feel busy but not effective. You will have to trust systems you don’t fully control while still taking responsibility for the results. You will have to shift from executor to designer. That discomfort is the signal. So the real question of 2026 isn’t whether AI will change your work.
 
 It’s this:
 
