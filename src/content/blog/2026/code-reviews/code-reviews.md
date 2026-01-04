@@ -20,7 +20,7 @@ It _is_ a post arguing that in 2026, **reviewing code is no longer the same thin
 
 ## What Changed
 
-In 2025, I,[like many others](https://www.youtube.com/watch?v=Ge8LoXfJJdA), essentially stopped writing code.
+In 2025, [like many others](https://www.youtube.com/watch?v=Ge8LoXfJJdA), I essentially stopped writing code.
 
 That doesn’t mean I stopped building software. It means the act of _typing_ code stopped being the bottleneck. AI coding agents can produce large, coherent diffs in minutes. Sometimes they’re elegant. Sometimes they’re messy. Often they’re both.
 
