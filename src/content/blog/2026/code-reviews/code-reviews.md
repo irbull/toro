@@ -12,7 +12,7 @@ description: "Code reviews made sense when code was scarce; in 2026, the real bo
 
 For a long time, [code reviews have been one of the most important quality mechanisms in software engineering](https://eclipsesource.com/blogs/2015/11/09/run-your-project-like-its-an-opensource-project/).
 
-They’ve caught bugs, prevented security issues, aligned teams on conventions, and—crucially—stopped bad changes from quietly entering production. This is not a post arguing that quality doesn’t matter, or that reviews were a mistake.
+They’ve caught bugs, prevented security issues, aligned teams on conventions, and stopped bad changes from quietly entering production. This is not a post arguing that quality doesn’t matter, or that reviews were a mistake.
 
 It _is_ a post arguing that in 2026, **reviewing code is no longer the same thing as reviewing change**, and treating them as the same abstraction is starting to hurt us.
 
@@ -38,7 +38,7 @@ Traditional code reviews are very good at local concerns: catching obvious corre
 
 They are much worse at system-level questions: whether a change moves the system in the right direction, whether it introduces slow architectural drift, or how it behaves operationally over time. As the volume of generated code increases, this gap becomes impossible to ignore.
 
-This is where many teams feel the pain. Reviews become a bottleneck—not because they’re preventing disasters, but because they’re spending human attention on _implementation details_ instead of _decisions_.
+This is where many teams feel the pain. Reviews become a bottleneck, not because they’re preventing disasters, but because they’re spending human attention on _implementation details_ instead of _decisions_.
 
 ---
 
@@ -73,7 +73,7 @@ When humans are reviewing AI-generated code, the most common question becomes: *
 
 A useful way to think about this is ownership, not triviality.
 
-A second human review isn’t required when the author can fully own the change: the intent is narrow and explicit, the outcome is directly observable, the blast radius is well understood, and the change is easy to undo. This isn’t about domain or importance—it’s about responsibility and reversibility.
+A second human review isn’t required when the author can fully own the change: the intent is narrow and explicit, the outcome is directly observable, the blast radius is well understood, and the change is easy to undo. This isn’t about domain or importance, _it’s about responsibility and reversibility_.
 
 A simple litmus test helps:
 
@@ -125,7 +125,7 @@ At a minimum, it should answer:
 - How do we roll it back?
 - How will we know it’s working?
 
-If you can’t explain the change, you’re not done—even if the code compiles.
+If you can’t explain the change, you’re not done, even if the code compiles.
 
 ---
 
@@ -150,7 +150,7 @@ Instead of treating all changes equally, review intensity should track risk:
 
 An **asynchronous change review** is a review of intent and impact that is _not a gate for progress_. The review can begin when the work starts, not when the code is finished. The change is merged when it’s ready, not when someone else is available.
 
-Reviewers may look before or after merge. Their role is to surface missed implications or coordination issues—not to grant permission. If a real problem is found, the change is adjusted or rolled back. That’s not a failure of the process; it’s how the process is meant to work.
+Reviewers may look before or after merge. Their role is to surface missed implications or coordination issues, _not to grant permission_. If a real problem is found, the change is adjusted or rolled back. That’s not a failure of the process; it’s how the process is meant to work.
 
 This isn’t about moving faster at all costs. It’s about slowing down _where it matters_ and getting out of the way everywhere else.
 
