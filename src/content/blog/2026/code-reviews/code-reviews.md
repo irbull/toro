@@ -111,11 +111,11 @@ A second human review isn’t required when the author can fully own the change:
 
 A simple litmus test helps:
 
-> **If I ship this and it’s wrong:**
-> – Will I notice quickly?
-> – Can I undo it myself?
-> – Can I explain exactly what changed and why?
-> – Can I keep this change local, or does it require shared awareness/coordination (contracts, consumers, other teams)?
+**If I ship this and it’s wrong:**
+ - Will I notice quickly?
+ - Can I undo it myself?
+ - Can I explain exactly what changed and why?
+ - Can I keep this change local, or does it require shared awareness/coordination (contracts, consumers, other teams)?
 
 If the answer to all four is “yes,” a second human review is usually unnecessary. Reviews are often less about finding bugs and more about aligning understanding across people who share responsibility for a system. The moment a change requires shared understanding to be safe, it deserves a human review.
 
