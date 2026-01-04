@@ -10,7 +10,7 @@ description: "Code reviews made sense when code was scarce; in 2026, the real bo
 ---
 # In 2026, Code Reviews Are the Wrong Abstraction
 
-For a long time, code reviews have been one of the most important quality mechanisms in software engineering.
+For a long time, [code reviews have been one of the most important quality mechanisms in software engineering](https://eclipsesource.com/blogs/2015/11/09/run-your-project-like-its-an-opensource-project/).
 
 They’ve caught bugs, prevented security issues, aligned teams on style and conventions, and *crucially* stopped bad changes from quietly entering production. This is not a post arguing that quality doesn’t matter, or that reviews were a mistake.
 
