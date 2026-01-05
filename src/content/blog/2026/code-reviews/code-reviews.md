@@ -69,11 +69,11 @@ In 2026, the second question matters more.
 
 ## When You _Don’t_ Need a Human Review
 
-When humans are reviewing AI-generated code, the most common question becomes: **when is it actually okay to ship without a second human review?**
+When we are reviewing AI-generated code, the most common question becomes: **when is it actually okay to ship without another review?**
 
 When people talk about skipping a code review, they usually reach for “this is small” as justification. A better way to think about it is ownership, not triviality.
 
-A second human review isn’t required when the author can fully own the change: the intent is narrow and explicit, the outcome is directly observable, the blast radius is well understood, and the change is easy to undo. This isn’t about domain or importance, _it’s about responsibility and reversibility_.
+A second (human) review isn’t required when the author can fully own the change: the intent is narrow and explicit, the outcome is directly observable, the blast radius is well understood, and the change is easy to undo. This isn’t about domain or importance, _it’s about responsibility and reversibility_.
 
 A simple litmus test helps:
 
@@ -83,9 +83,9 @@ A simple litmus test helps:
 - Can I explain exactly what changed and why?  
 - Can I keep this change local, or does it require shared awareness and coordination?
 
-If the answer to all four is “yes,” a second human review is usually unnecessary.
+If the answer to all four is “yes,” a second review is usually unnecessary.
 
-Reviews are often less about finding bugs and more about aligning understanding across people who share responsibility for a system. The moment a change requires shared understanding to be safe, it deserves a human review.
+Reviews are often less about finding bugs and more about aligning understanding across people who share responsibility for a system. The moment a change requires shared understanding to be safe, it deserves a thorough review.
 
 Reviews shouldn’t be a tax on progress; they should be insurance against decisions you can’t easily undo.
 
