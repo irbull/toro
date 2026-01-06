@@ -9,7 +9,7 @@ tags:
  - LLM
  - AI
  - Vibe Decoding
-description: "Vibe Decoding is a personal experiment in using events, Kafka, and AI agents to turn everyday signals into timely, contextual insight.![[CleanShot 2026-01-05 at 21.42.58@2x.png]]"
+description: "Vibe Decoding is a personal experiment in using events, Kafka, and AI agents to turn everyday signals into timely, contextual insight."
 ---
 
 ### Turning Life’s Ambient Signals into Timely Action
