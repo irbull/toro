@@ -9,7 +9,7 @@ tags:
  - LLM
  - AI
  - Vibe Decoding
-description: "Vibe Decoding is a personal experiment in using events, Kafka, and AI agents to turn everyday signals into timely, contextual insight."
+description: "Vibe Decoding is a personal experiment in using events, Kafka, and AI agents to turn everyday signals into timely, contextual insight.![[CleanShot 2026-01-05 at 21.42.58@2x.png]]"
 ---
 
 ### Turning Life’s Ambient Signals into Timely Action
@@ -24,10 +24,11 @@ I wanted a better way to read the links I saved during the day.
 
 Over the Christmas holidays, with a bit more breathing room, I built a small set of tools to help me save articles from my phone or browser so I could read them later. The tools did exactly what they were supposed to do.
 
+![./share-link.png](./share-link.png)
+
 The tools worked. The links were there when I came back to them. But when I finally sat down to read, I realized I had only solved half the problem. I could see what I saved, but I could not remember why I saved it.
 
-The link survived.  
-The intent didn’t.
+The link survived.  The intent didn’t.
 
 ---
 
@@ -37,15 +38,13 @@ My initial solution was straightforward: summarize the links.
 
 If the system could extract a short summary and a few tags, I could quickly scan what I’d saved and decide what was worth reading in full. That helped, but it also revealed something more important.
 
-The summary wasn’t the real win.  
-The _timing_ was.
+The summary wasn’t the real win.  The _timing_ was.
 
 Reading a summarized link later felt like picking up a conversation where I’d left off. The system wasn’t just storing content; it was restoring context.
 
 That’s when it clicked.
 
-This wasn’t really a link problem.  
-It was an interpretation problem.
+This wasn’t really a link problem.  It was an interpretation problem.
 
 ---
 
@@ -69,9 +68,7 @@ That’s what I mean by a _vibe_.
 
 Vibe Decoding is about capturing those signals without forcing premature structure, and letting systems observe, enrich, and reinterpret them as new context appears.
 
-Capture first.  
-Interpret later.  
-Act when it makes sense.
+Capture first.  Interpret later.  Act when it makes sense.
 
 ---
 
@@ -86,9 +83,7 @@ Nothing happens immediately. The note becomes part of my life stream, alongside 
 
 Days later, when I walk into the store where I usually buy hot tub supplies, I get a message reminding me about the filter.
 
-No calendar entry.  
-No brittle reminder.  
-Just the right information at the right moment.
+No calendar entry.  No brittle reminder.  Just the right information at the right moment.
 
 That’s a vibe being decoded.
 
@@ -127,8 +122,7 @@ What began as a better way to read saved links has become an exploration of even
 
 In future posts, I’ll go deeper into the architecture: why Kafka, how the agents are structured, how events flow, and where this approach breaks down.
 
-This isn’t a product announcement.  
-It’s an experiment.
+This isn’t a product announcement, **it’s an experiment**.
 
 If Vibe Coding is about _producing output_,  
 **Vibe Decoding is about understanding the signal first.**
