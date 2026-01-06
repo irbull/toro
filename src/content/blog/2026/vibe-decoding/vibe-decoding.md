@@ -16,6 +16,8 @@ description: "Vibe Decoding is a personal experiment in using events, Kafka, and
 
 > **Vibe Decoding** is the practice of capturing low-friction signals from your life and letting systems interpret them over time, so the _right_ information surfaces at the _right_ moment.
 
+[https://vibedecoding.io](https://vibedecoding.io)
+
 ---
 
 ## This Started With Saved Links
