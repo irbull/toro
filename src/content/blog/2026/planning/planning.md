@@ -38,11 +38,9 @@ Traditional sprints are built around commitment. You agree to a set of stories, 
 
 That only makes sense when shipping is hard.
 
-In an AI-native environment, shipping is cheap. What is expensive is discovering whether what you shipped actually mattered. The purpose of a sprint quietly flips. It stops being about how much you can deliver and becomes about how much you can learn about the right direction.
+In an AI-native environment, shipping is cheap. What is expensive is discovering whether what you shipped actually mattered. The purpose of a sprint quietly flips. It stops being about how much you can deliver and becomes about how quickly you can clarify direction.
 
-Not learning in the academic sense. Learning which path produces revenue, retention, stability, or growth. Learning which bets are worth continuing and which ones should be killed.
-
-A sprint becomes a window of intentional decision-making, not a production quota.
+A sprint is no longer a production quota. It is a decision window. At the end of it, you should know which paths deserve to be continued and which ones should be abandoned.
 
 ---
 
@@ -74,7 +72,7 @@ This is why planning and coordination do not go away in an AI-native organizatio
 
 Product managers used to be traffic cops for delivery. They wrote tickets, prioritized backlogs, and negotiated scope. That job existed because execution was scarce.
 
-Now execution is abundant. The PM role becomes something more uncomfortable and more important. They become stewards of decision quality and integration. Their job is to curate hypotheses, sequence bets, define what success looks like, and make sure teams are not accidentally working at cross purposes.
+Now execution is abundant. The PM role becomes something more uncomfortable and more important. They become stewards of decision quality and integration. Their job is to curate hypotheses, sequence bets, define what success looks like, and ensure teams are not accidentally working at cross purposes.
 
 They are not there to move work through the system. They are there to decide what deserves to enter the system at all.
 
@@ -90,13 +88,37 @@ That is why planning now matters more than ever. Not because execution is hard, 
 
 ---
 
+## **So What Do We Do instead**
+
+If planning is now the bottleneck, the answer is not to plan more. It is to plan differently.
+
+Teams need to stop planning work and start planning bets.
+
+Instead of long backlogs, maintain a small, actively curated queue of problems and hypotheses that matter. Instead of sprint commitments to scope, commit to testing a small number of important assumptions. Instead of asking whether work is done, ask whether a decision has been made or a direction clarified.
+
+This does not remove delivery. It makes delivery meaningful.
+
+---
+
+## **Bets Have to land**
+
+A bet is not a slide deck or a prototype. It is a real change to a real system that real users can experience.
+
+In an AI-native organization, the cost of creating these changes is low, so the discipline must come from what happens after they land. Every bet must integrate. It must be observable. It must either prove itself and become part of the product, or be removed.
+
+This is how learning and shipping stay coupled. You do not experiment in isolation. You ship small, reversible changes into the real system and let reality tell you which ones deserve to stay.
+
+Integration is not a phase at the end. It is the moment of truth for every bet.
+
+---
+
 ## **What Management Really wants**
 
 Management still wants outcomes. Revenue. Growth. Stability. Customers. That has not changed.
 
 What has changed is how those outcomes are produced. They no longer come from executing plans efficiently. They come from **placing and refining the right sequence of bets** faster than competitors.
 
-Learning and shipping are no longer opposites. Learning is how you avoid shipping the wrong thing faster than ever.
+In this world, shipping and learning are not opposites. Shipping is how you learn. Learning is how you decide what to keep.
 
 ---
 
