@@ -34,11 +34,11 @@ That question cannot be answered by queueing work. It can only be answered by ju
 
 ## **Sprints Stop Being Delivery contracts**
 
-Traditional sprints are built around commitment. You agree to a set of stories, spend two weeks implementing them, and measure success by what shipped.
+Traditional sprints are built around commitment. You agree to a set of stories, spend two weeks implementing them, and measure success by closed tickets.
 
-That only makes sense when shipping is hard.
+That only makes sense when writing code is the bottleneck. In an AI-native world, code is cheap, but shipping is still expensive because it involves integration, coordination, and real-world consequences.
 
-In an AI-native environment, shipping is cheap. What is expensive is discovering whether what you shipped actually mattered. The purpose of a sprint quietly flips. It stops being about how much you can deliver and becomes about how quickly you can clarify direction.
+What is truly scarce now is not implementation, but knowing whether what you developed actually mattered. The purpose of a sprint quietly flips. It stops being about how much you can deliver and becomes about how quickly you can clarify direction.
 
 A sprint is no longer a production quota. It is a decision window. At the end of it, you should know which paths deserve to be continued and which ones should be abandoned.
 
