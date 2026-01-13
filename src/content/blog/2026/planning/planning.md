@@ -16,23 +16,23 @@ AI has quietly removed that constraint.
 
 We can now produce more working software in a week than many teams once shipped in a quarter. Refactors are cheap. Rewrites are fast. Experiments are trivial. And yet, most teams do not feel more in control. They feel overwhelmed.
 
-The reason is simple. When execution becomes cheap, **decision-making becomes the bottleneck.**
+The reason is simple. When execution becomes cheap, **decision-making becomes the bottleneck**.
 
 ---
 
-### **Backlogs Stop Working When Everything is possible**
+## **Backlogs Stop Working When Everything is possible**
 
 Backlogs were designed to answer a very specific question: what can we afford to build next? They make sense when capacity is scarce and work must be carefully rationed.
 
 But when the cost of writing and changing code collapses, backlogs stop being planning tools and start becoming noise. Every idea _can_ be implemented. Every experiment _can_ be run. Every alternative _can_ be tried. The backlog becomes infinite.
 
-The real question is no longer what can we build. **It is what should we build.**
+The real question is no longer what **can** we build. It is what **should** we build.
 
 That question cannot be answered by queueing work. It can only be answered by judgment.
 
 ---
 
-### **Sprints Stop Being Delivery contracts**
+## **Sprints Stop Being Delivery contracts**
 
 Traditional sprints are built around commitment. You agree to a set of stories, spend two weeks implementing them, and measure success by what shipped.
 
@@ -46,27 +46,41 @@ A sprint becomes a window of intentional decision-making, not a production quota
 
 ---
 
-### **Why Everyone Feels Like a Project Manager now**
+## **Why Everyone Feels Like a Project Manager now**
 
 This is why so many engineers feel like they are suddenly doing “product” or “project” work. It is not because bureaucracy increased. It is because **every meaningful action now requires a choice**.
 
 When AI can generate five versions of something in an afternoon, the hard part is not building. It is choosing. Which version do we keep? Which path do we abandon? Which signal do we trust?
 
-That is not project management. That is **bet management**.
+That is not project management. It is **bet management**.
 
 ---
 
-### **What PMs Actually Do in This world**
+## **Why Integration Becomes Harder, Not easier**
+
+AI makes it easy for any individual or team to move fast. What it does not make easy is keeping many fast-moving teams aligned.
+
+When code was slow, integration happened naturally through delay. Teams waited on each other. Interfaces stabilized because change was expensive.
+
+When code is cheap, change is constant. Every team can evolve its part of the system independently. That creates a new bottleneck: shared understanding.
+
+Most integration failures are not technical. They are mismatches of intent, assumptions, and timing. One team changes behavior, another team relies on the old behavior, and nothing in the code is obviously wrong.
+
+This is why planning and coordination do not go away in an AI-native organization. They become more important. Not because work needs to be scheduled, but because meaning needs to be shared.
+
+---
+
+## **What PMs Actually Do in This world**
 
 Product managers used to be traffic cops for delivery. They wrote tickets, prioritized backlogs, and negotiated scope. That job existed because execution was scarce.
 
-Now execution is abundant. The PM role becomes something more uncomfortable and more important. They become stewards of decision quality. Their job is to curate hypotheses, sequence bets, define what success looks like, and ensure the organization does not confuse activity with progress.
+Now execution is abundant. The PM role becomes something more uncomfortable and more important. They become stewards of decision quality and integration. Their job is to curate hypotheses, sequence bets, define what success looks like, and make sure teams are not accidentally working at cross purposes.
 
 They are not there to move work through the system. They are there to decide what deserves to enter the system at all.
 
 ---
 
-### **Why Technical Debt No Longer Dominates planning**
+## **Why Technical Debt No Longer Dominates planning**
 
 One of the strangest effects of AI is that the interest rate on technical debt is collapsing. Refactors are cheap. Rewrites are fast. Translating between architectures is easy. The old fear that every messy decision will slow you down forever is fading.
 
@@ -76,7 +90,7 @@ That is why planning now matters more than ever. Not because execution is hard, 
 
 ---
 
-### **What Management Really wants**
+## **What Management Really wants**
 
 Management still wants outcomes. Revenue. Growth. Stability. Customers. That has not changed.
 
@@ -86,7 +100,7 @@ Learning and shipping are no longer opposites. Learning is how you avoid shippin
 
 ---
 
-### **The Uncomfortable conclusion**
+## **The Uncomfortable conclusion**
 
 AI has removed the friction that used to hide bad planning. There is no longer a technical excuse for being wrong slowly. Every mistake is now visible quickly.
 
