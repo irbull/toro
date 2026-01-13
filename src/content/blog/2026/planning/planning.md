@@ -62,9 +62,9 @@ AI makes it easy for any individual or team to move fast. What it does not make 
 
 When code was slow, integration happened naturally through delay. Teams waited on each other. Interfaces stabilized because change was expensive.
 
-When code is cheap, change is constant. Every team can evolve its part of the system independently. That creates a new bottleneck: shared understanding.
+When code is cheap, change is constant. Every team can evolve its part of the system independently. That creates a new bottleneck: _shared understanding_.
 
-Most integration failures are not technical. They are mismatches of intent, assumptions, and timing. One team changes behavior, another team relies on the old behavior, and nothing in the code is obviously wrong.
+Most integration failures are not technical. They are mismatches of intent, assumptions, and timing. One team changes behaviour, another team relies on the old behaviour, and nothing in the code is obviously wrong.
 
 This is why planning and coordination do not go away in an AI-native organization. They become more important. Not because work needs to be scheduled, but because meaning needs to be shared.
 
