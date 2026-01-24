@@ -27,7 +27,7 @@ Beads stores issues in two places:
 
 When you run `bd create`, it writes to SQLite immediately, then exports to JSONL. When collaborators pull, the JSONL imports to their SQLite. No central server, git IS the database.
 
-```
+```bash
 Your machine                    Collaborator's machine
 ─────────────                   ──────────────────────
 SQLite (local)                  SQLite (local)
@@ -196,7 +196,7 @@ The spec provides the "why" and high-level design; Beads provides the "what's ne
 
 At the end of every session, don't just stop. [Tell your agent to "land the plane"](https://steve-yegge.medium.com/beads-blows-up-a0a61bb889b4):
 
-```
+```bash
 Let's land the plane
 ```
 
@@ -255,7 +255,7 @@ As Jeffrey Emanuel (creator of MCP Agent Mail) [described to Yegge](https://stev
 
 Behind the scenes, a background daemon handles synchronization:
 
-```
+```bash
 CLI Command → Unix Socket → Daemon → SQLite DB
                               ↓
                         JSONL Export (5s debounce)
