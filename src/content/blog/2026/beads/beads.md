@@ -464,4 +464,4 @@ The tool provides the memory. You provide the discipline.
 
 ---
 
-_Beads is open source at [github.com/steveyegge/beads](https://github.com/steveyegge/beads). For more on AI coding workflows, check out Steve Yegge's book "Vibe Coding" with Gene Kim._
+_Beads is open source at [github.com/steveyegge/beads](https://github.com/steveyegge/beads)._
