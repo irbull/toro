@@ -10,7 +10,7 @@ tags:
 description: "A practical guide to Steve Yegge's git-native task system for AI coding agents."
 ---
 
-Fifteen years ago, while converting the Eclipse Project from CVS to Git, [Chris Aniszczyk](https://www.linkedin.com/in/caniszczyk/) mused about a distributed issue tracker. The idea stuck with me. I figured someone smarter would eventually build it.
+Fifteen years ago, while converting the Eclipse Project from CVS to Git, [Chris Aniszczyk](https://www.linkedin.com/in/caniszczyk/) mused about a distributed issue tracker. The idea stuck with me. I figured someone smarter than me would eventually build it.
 
 Turns out [Steve Yegge](https://www.linkedin.com/in/steveyegge/) did, but for a reason none of us anticipated: _AI agents need external memory_.
 
