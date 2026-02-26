@@ -1,7 +1,7 @@
 ---
 author: "Ian Bull"
 pubDatetime: 2026-02-26
-title: "Software Architecture Is More Important Than Ever"
+title: "Sinks, Not Pipes: Software Architecture in the Age of AI"
 postSlug: software-architecture
 featured: false
 tags:
