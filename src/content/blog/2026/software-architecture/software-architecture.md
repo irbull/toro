@@ -11,7 +11,7 @@ tags:
 description: "Software architecture principles like low coupling, high cohesion, and minimal side effects matter more than ever when AI agents are the ones navigating your codebase."
 ---
 
-Twenty years ago, I wrote a master's thesis about navigating software architectures. The central problem was simple: large codebases are hard to understand. New developers joining a project face a daunting ramp-up period. The relationships between modules, the hidden dependencies, the unwritten conventions... all of it lives in the heads of the people who built the system. I built tools using [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra) to query codebases, extract their structure, and help people reason about the architecture without holding the entire thing in their heads.
+Over twenty years ago, I wrote a master's thesis about navigating software architectures. The central problem was simple: large codebases are hard to understand. New developers joining a project face a daunting ramp-up period. The relationships between modules, the hidden dependencies, the unwritten conventions... all of it lives in the heads of the people who built the system. I built tools using [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra) to query codebases, extract their structure, and help people reason about the architecture without holding the entire thing in their heads.
 
 Two decades later, we're facing the exact same problem, except now the "new developer" joining your codebase every morning is an AI agent. And it has no memory. Every session starts from zero.
 
@@ -23,19 +23,19 @@ This changes everything about how we should think about software architecture.
 
 His metaphor is apt. When an AI agent enters your codebase, it's like the protagonist of _Memento_. No prior context, no institutional memory, just a fresh pair of eyes and a mandate to do something useful. Unlike a human new starter, who gradually builds a mental model over weeks and months, the AI will never accumulate that understanding. Tomorrow it starts over. Next hour it starts over.
 
-In my thesis work, I studied how software architectures could be queried and navigated using formal methods. I used a tool called [Grok](https://swag.uwaterloo.ca/grok/index.html) (no, not _that_ Grok), built on a relational calculus, to extract and reason about the concrete architecture of real systems like PostgreSQL. One of the key insights was the gap between what [Ric Holt](https://plg.uwaterloo.ca/~holt/) called the "shared mental model" of a system (the conceptual architecture that lives in developers' heads) and the actual dependency structure buried in the code. That gap is where confusion lives. It's where new developers get lost.
+In my thesis work, I studied how software architectures could be queried and navigated using formal methods. I used a tool called [Grok](https://www.swag.uwaterloo.ca/grok/index.html) (no, not _that_ Grok), built on a relational calculus, to extract and reason about the concrete architecture of real systems like PostgreSQL. One of the key insights was the gap between what [Ric Holt](https://plg.uwaterloo.ca/~holt/) called the "shared mental model" of a system (the conceptual architecture that lives in developers' heads) and the actual dependency structure buried in the code. That gap is where confusion lives. It's where new developers get lost.
 
 AI agents live permanently in that gap.
 
 ## What My Thesis Got Right (Accidentally)
 
-When I was working on architectural recovery and navigation twenty years ago, the motivation was human comprehension. How do you help a developer understand a million-line codebase? How do you answer questions like "which subsystems does this component actually depend on?" or "are there architectural violations where module A reaches into the internals of module B?"
+When I was working on architectural recovery and navigation twenty-five years ago, the motivation was human comprehension. How do you help a developer understand a million-line codebase? How do you answer questions like "which subsystems does this component actually depend on?" or "are there architectural violations where module A reaches into the internals of module B?"
 
 The approach I took was to model codebases as sets of relations (function calls, containment hierarchies, file structures, type references) and then query those relations to recover architectural structure. We could ask: show me every function in subsystem X that calls a function in subsystem Y. Show me the actual dependency graph between high-level components. Show me where the concrete architecture diverges from the conceptual one.
 
 This was useful for humans. But it turns out it's even more useful as a design philosophy for AI. The core principle is the same: **the structure of your system should be discoverable from the outside without requiring you to read every line of code inside**.
 
-If you have to trace through implementation details to understand what a component does, your architecture has failed, whether the reader is a junior developer in 2004 or a language model in 2026.
+If you have to trace through implementation details to understand what a component does, your architecture has failed, whether the reader is a junior developer in 2002 or a language model in 2026.
 
 ## Deep Modules and the Return of Old Ideas
 
@@ -77,9 +77,9 @@ This is essentially what my thesis tooling did, but through queries rather than 
 
 For AI agents, this has to be baked into the file system and the code itself. The directory structure should reflect the conceptual architecture. The public interfaces should be obvious and well-typed. The implementation details should be behind clear boundaries. When an AI agent explores your codebase, it should be able to build a working mental model from the outside in, just as my thesis tools allowed human analysts to do two decades ago.
 
-## The Twenty-Year Echo
+## The Twenty-Five Year Echo
 
-It's a strange feeling to look back at work from twenty years ago and realize it's more relevant today than it was then. The problems I was studying (architectural comprehension, dependency management, the gap between intended and actual structure) were real problems in 2004, but they were human-scale problems. Developers could work around them with time, experience, and good communication.
+It's a strange feeling to look back at work from twenty-five years ago and realize it's more relevant today than it was then. The problems I was studying (architectural comprehension, dependency management, the gap between intended and actual structure) were real problems in 2002, but they were human-scale problems. Developers could work around them with time, experience, and good communication.
 
 Now those same problems are machine-scale problems. AI agents are hitting the same walls that new developers hit, but they're hitting them hundreds of times a day, with no ability to accumulate wisdom between sessions. The architectural sins that a human team could tolerate (the hidden coupling, the undocumented side effects, the modules that only make sense if you know the history) are fatal to AI-assisted development.
 
