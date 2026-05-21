@@ -65,6 +65,9 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   adapter: deno(),
+  image: {
+    service: { entrypoint: "astro/assets/services/noop" },
+  },
   integrations: [sitemap(), preact()],
   markdown: {
     remarkPlugins: [
