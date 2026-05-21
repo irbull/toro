@@ -4,7 +4,7 @@ import getSortedPosts from "../utils/getSortedPosts.ts";
 import slugify from "../utils/slugify.ts";
 import { SITE } from "../config.ts";
 
-export async function get() {
+export async function GET() {
   const posts = await getCollection("blog");
   const sortedPosts = getSortedPosts(posts);
   return rss({

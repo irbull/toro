@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Tag from "../components/Tag.astro";
 import Datetime from "../components/Datetime.tsx";
-import type { CollectionEntry } from "astro:content";
+import { render, type CollectionEntry } from "astro:content";
 import { slugifyStr } from "../utils/slugify";
 
 export interface Props {
@@ -14,20 +14,20 @@ export interface Props {
 const { post } = Astro.props;
 const { title, author, description, ogImage, pubDatetime, tags } = post.data;
 
+const blog2023Files = import.meta.glob<{ file: string; images: Record<string, { src: string }> }>(
+  "/src/content/blog/2023/**/*",
+);
+
 async function getAssetsOGImageURL() {
   return new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin).href;
 }
 
 async function getOptimizedOGImageURL() {
-  const images = await Astro.glob("/src/content/blog/2023/**/*").then(files => {
-    return files
-      .filter(file => {
-        return file.file?.endsWith(post?.id);
-      })
-      .map(file => {
-        return file.images;
-      })[0];
-  });
+  const entries = await Promise.all(
+    Object.values(blog2023Files).map(load => load()),
+  );
+  const match = entries.find(file => file.file?.endsWith(post?.id));
+  const images = match?.images;
   const optimizedOGImage = images?.[ogImage ?? ""]?.src;
   return new URL(
     optimizedOGImage ? optimizedOGImage : `${title}.png`,
@@ -35,7 +35,7 @@ async function getOptimizedOGImageURL() {
   ).href;
 }
 
-const { Content } = await post.render();
+const { Content } = await render(post);
 const ogUrl = ogImage?.startsWith("/assets")
   ? await getAssetsOGImageURL()
   : await getOptimizedOGImageURL();
