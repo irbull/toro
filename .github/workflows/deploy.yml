@@ -22,11 +22,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: "npm"
 
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+
+      - name: Cache jampack
+        uses: actions/cache@v4
+        with:
+          path: .jampack/cache
+          key: jampack-${{ runner.os }}-${{ hashFiles('public/**', 'src/content/**') }}
+          restore-keys: |
+            jampack-${{ runner.os }}-
 
       - name: Build step
         run: "deno task deploy-build"
@@ -35,5 +44,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "ianbull-toro-36"
-          entrypoint: "server/entry.mjs"
+          entrypoint: "entry.mjs"
           root: "dist"
