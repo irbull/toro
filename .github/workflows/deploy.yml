@@ -18,6 +18,11 @@ jobs:
       - name: Clone repository
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
