@@ -1,5 +1,5 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
@@ -66,11 +66,7 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   adapter: deno(),
-  integrations: [tailwind({
-    config: {
-      applyBaseStyles: false,
-    },
-  }), sitemap(), preact()],
+  integrations: [sitemap(), preact()],
   markdown: {
     remarkPlugins: [
       remarkToc,
@@ -88,6 +84,7 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
   vite: {
+    plugins: [tailwindcss()],
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
