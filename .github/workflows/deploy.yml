@@ -35,4 +35,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "ianbull-toro-36"
-          entrypoint: "dist/server/entry.mjs"
+          entrypoint: "server/entry.mjs"
+          root: "dist"

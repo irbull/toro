@@ -83,6 +83,10 @@ export default defineConfig({
     extendDefaultPlugins: true,
   },
   vite: {
+    ssr: {
+      noExternal: true,
+      external: ["@resvg/resvg-js", "sharp"],
+    },
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
