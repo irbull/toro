@@ -69,7 +69,7 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  output: 'server',
+  output: 'static',
   adapter: deno(),
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
