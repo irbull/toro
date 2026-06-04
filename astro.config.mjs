@@ -6,9 +6,14 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
-import node from "@astrojs/node";
+import deno from "@deno/astro-adapter";
 
 import preact from "@astrojs/preact";
+
+// Deno Deploy needs all npm deps bundled inline (no bare specifiers). That
+// bundling must NOT happen in dev, where it forces CommonJS deps like `cookie`
+// through Vite's ESM module runner and crashes with "exports is not defined".
+const isBuild = process.argv.includes("build");
 
 function trimMdExtension(str) {
   if (typeof str !== "string") {
@@ -65,7 +70,7 @@ export default defineConfig({
   site: SITE.website,
   redirects,
   output: 'server',
-  adapter: node({ mode: "standalone" }),
+  adapter: deno(),
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
   },
