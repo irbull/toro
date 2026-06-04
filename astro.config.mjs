@@ -6,7 +6,7 @@ import { SITE } from "./src/config";
 import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
-import deno from "@deno/astro-adapter";
+import node from "@astrojs/node";
 
 import preact from "@astrojs/preact";
 
@@ -64,7 +64,8 @@ const redirects = await readMarkdownFiles("./src/content/blog/");
 export default defineConfig({
   site: SITE.website,
   redirects,
-  adapter: deno(),
+  output: 'server',
+  adapter: node({ mode: "standalone" }),
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
   },
@@ -87,7 +88,6 @@ export default defineConfig({
   },
   vite: {
     ssr: {
-      noExternal: true,
       external: ["@resvg/resvg-js", "sharp"],
     },
     optimizeDeps: {
