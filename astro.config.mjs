@@ -8,7 +8,6 @@ import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
 import deno from "@deno/astro-adapter";
-import tailwindcss from "@tailwindcss/vite";
 
 import preact from "@astrojs/preact";
 
@@ -95,7 +94,6 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [tailwindcss()],
     ssr: {
       external: ["@resvg/resvg-js", "sharp"],
     },
