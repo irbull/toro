@@ -21,7 +21,13 @@ export async function getStaticPaths() {
   const notes = await getCollection("til");
   const recipes = await getCollection("recipes");
 
-  const tags = getUniqueTags(posts).concat(getUniqueTags(notes).concat(getUniqueTags(recipes)));
+  const tags = [
+    ...new Set([
+      ...getUniqueTags(posts),
+      ...getUniqueTags(notes),
+      ...getUniqueTags(recipes),
+    ]),
+  ];
 
   return tags.map(tag => {
     return {

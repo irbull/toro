@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import sitemap from "@astrojs/sitemap";
@@ -7,6 +8,7 @@ import { promises as fs } from "fs";
 import matter from "gray-matter";
 import path from "path";
 import deno from "@deno/astro-adapter";
+import tailwindcss from "@tailwindcss/vite";
 
 import preact from "@astrojs/preact";
 
@@ -76,22 +78,24 @@ export default defineConfig({
   },
   integrations: [sitemap(), preact()],
   markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
+    processor: unified({
+      remarkPlugins: [
+        remarkToc,
+        [
+          remarkCollapse,
+          {
+            test: "Table of contents",
+          },
+        ],
       ],
-    ],
+    }),
     shikiConfig: {
       theme: "one-dark-pro",
       wrap: true,
     },
-    extendDefaultPlugins: true,
   },
   vite: {
+    plugins: [tailwindcss()],
     ssr: {
       external: ["@resvg/resvg-js", "sharp"],
     },
