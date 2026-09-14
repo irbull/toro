@@ -66,6 +66,55 @@ async function readMarkdownFiles(dir) {
 
 const redirects = await readMarkdownFiles("./src/content/blog/");
 
+// Deno Deploy fixes, applied from a build hook so they run wherever
+// `astro build` runs — the Deploy builder invokes astro directly and does
+// not run scripts/emit-deploy-entry.ts.
+//
+// 1. Emit dist/entry.mjs, a shim that statically imports the jsr modules
+//    the @deno/astro-adapter `start()` loads via `await import(VAR)`, so
+//    Deploy's isolate pre-fetches them. Versions mirror the constants in
+//    @deno/astro-adapter/src/index.ts; bump them when the adapter does.
+// 2. Patch the adapter's static-file path join. Astro >= 7.3 keeps the
+//    leading slash in `app.removeBase()` ("/about", not "about"), so the
+//    adapter's `"./" + pathname` join yields "client//about". Exact-file
+//    requests still resolve (the OS collapses "//"), but the prerendered
+//    fallback compares pathname strings, so every clean URL 404s. Drop
+//    this once @deno/astro-adapter > 0.6.0 handles the slash itself.
+function denoDeployFixes() {
+  const SHIM = `\
+import "jsr:@std/http@^1.1.1/file-server";
+import "jsr:@std/path@^1.1.5";
+import "./server/entry.mjs";
+`;
+  const ENTRY = new URL("./dist/server/entry.mjs", import.meta.url);
+  const BROKEN = `new URL("./" + app.removeBase(url.pathname), clientRoot)`;
+  const FIXED = `new URL("./" + app.removeBase(url.pathname).replace(/^\\/+/, ""), clientRoot)`;
+
+  return {
+    name: "deno-deploy-fixes",
+    hooks: {
+      "astro:build:done": async ({ logger }) => {
+        await fs.writeFile(new URL("./dist/entry.mjs", import.meta.url), SHIM);
+        logger.info("Wrote dist/entry.mjs (Deno Deploy jsr pre-fetch shim)");
+
+        const entry = await fs.readFile(ENTRY, "utf-8");
+        if (entry.includes(FIXED)) {
+          logger.info("dist/server/entry.mjs already patched for removeBase leading slash");
+        } else if (entry.includes(BROKEN)) {
+          await fs.writeFile(ENTRY, entry.replace(BROKEN, FIXED));
+          logger.info("Patched removeBase leading slash in dist/server/entry.mjs");
+        } else {
+          throw new Error(
+            "dist/server/entry.mjs does not contain the expected removeBase call — " +
+              "check whether @deno/astro-adapter fixed the leading-slash join " +
+              "and drop this patch"
+          );
+        }
+      },
+    },
+  };
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
@@ -75,7 +124,7 @@ export default defineConfig({
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
   },
-  integrations: [sitemap(), preact()],
+  integrations: [sitemap(), preact(), denoDeployFixes()],
   markdown: {
     processor: unified({
       remarkPlugins: [
