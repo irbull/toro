@@ -23,7 +23,7 @@ From Apache Tomcat, ASP.NET, Ruby on Rails to Node.js, the 2000s were the foundi
 
 After my time at Waterloo, I moved to Victoria and joined the [Computer Human Interaction & Software Engineering Lab (CHISEL)](https://thechiselgroup.org/). It was here that I began working on the next great application platform, the [Eclipse Platform](https://eclipse.org/). Most people know Eclipse as the popular Java IDE from the 2000s, but Eclipse was also an application runtime platform. I was a PMC member of the Eclipse RT Project and co-lead of the Eclipse Provisioning Platform (p2). Applications were centred around OSGi bundles and we provided a provisioning platform, service discovery framework, dependency injection, developer tools and a web server (Jetty).
 
-<img src="./rt-book.png" alt="RT Book" width="300">
+![RT Book](./rt-book.png)
 
 The 2010s saw the rise of application platforms for mobile development. React Native became the dominant cross-platform option. I had the privilege of being part of the [Tabris.js](https://tabris.com/) team and I built a JavaScript runtime for Android based on V8 called [J2V8](https://github.com/eclipsesource/j2v8). I won't claim this was one of the greatest application platforms, but we had a loyal user base and delivered high quality software.
 
@@ -33,7 +33,7 @@ Application platforms have always fascinated me as they all attempt to raise the
 
 By the late 2010s every major platform had landed on the same ideas (conventions, embedded servers, scaffolding, developer tools and package managers), and the difference turned into ecosystem and taste. This is why [Deno](https://deno.com/) was so refreshing when it first emerged. The Deno team dropped the inherited opinions about how to build an application platform and replaced them with their own. They redefined how dependencies were declared, provided highly opinionated tooling, built security into the box and even provided a hosting environment that matched your local development setup. Over the years, Deno needed to support existing ecosystems, and slowly adopted the conventions others used. This was a necessity, but it brought Deno to the same place as other application platforms.
 
-<img src="./deno.png" alt="Deno" width="300">
+![Deno](./deno.png)
 
 It was in 2024 that I started to wonder if Deno would be the Last Great Application Platform. I got involved, helped improve error messages in the runtime and standard library, and even maintained the Deno / Astro connector for a while. When Deno 2.0 launched in October 2024, it centred around [simplicity and developer experience](https://www.youtube.com/watch?v=swXWUfufu2w): better tooling, better defaults, security out of the box. Two short years later, the [Deno team is joining Cloudflare, Deno Deploy is shutting down, and Deno-led runtime development is ending](https://deno.com/blog/cloudflare). I don't think Deno got worse, I think simplicity and developer experience stopped being a reason to pick a platform. When an agent writes the code, the friction a great platform removes is friction nobody feels anymore. What's left is infrastructure, and infrastructure is a commodity where the existing players win. It doesn't matter if you're better.
 
